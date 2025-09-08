@@ -1,7 +1,7 @@
 /* ======== FRONT-END ONLY — DO NOT PUT APPS SCRIPT CODE HERE ======== */
 
 /* ---- config ---- */
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbymYzrgja-rdlYjrvPVfA-88GJNXWc_BuF2vUEVnBElbWYmCr7GE19lXL9BzkPQXC9J/exec';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbyEjJvFoBgHz8LMUt7dBauwHgIOByKnRR3N4ExpCXn3dk9zpkuQUogzC3f6Z7oAUtaxWQ/exec';
 
 /* ---- utilities ---- */
 const $  = (s, sc = document) => sc.querySelector(s);

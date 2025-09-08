@@ -181,9 +181,17 @@
         <label for="insuranceSelect" class="visually-hidden">Insurance</label>
         <select id="insuranceSelect" class="form-select d-inline-block" style="max-width:320px;">
           <option value="Without insurance" selected="">Without insurance</option>
-          <option value="UHC">UHC</option>
+		  <!--<option value="Aetna">Aetna</option>
+          <option value="Anthem">Anthem BCBS</option>
+          <option value="UnitedConcordia">Ameritas</option>
           <option value="Delta">Delta</option>
-          <option value="Guardian">Guardian</option>
+		  <option value="Aetna">Guardian</option>
+          <option value="Careington">Humana</option>
+          <option value="Metlife">Metlife</option>
+          <option value="UnitedConcordia">Mutual of Omaha</option>
+          <option value="UnitedConcordia">Principal</option>
+		  <option value="UHC">United Healthcare</option>
+          <option value="UnitedConcordia">United Concordia</option>-->
         </select>
       </div>
     </div>
@@ -499,9 +507,12 @@
   // 1) EDIT YOUR RATES HERE
   var PRICING = {
     "Without insurance": { "Evaluation": 322, "Root Canals": 1080, "Root Surgery": 1120 },
-    "UHC":               { "Evaluation": 120, "Root Canals": 720,  "Root Surgery": 800  },
+    "UHC":               { "Evaluation": 132, "Root Canals": 682,  "Root Surgery": 1062  },
+    "Delta":             { "Evaluation": 200, "Root Canals": 676,  "Root Surgery": 974  },
+    "Guardian":          { "Evaluation": 160, "Root Canals": 790,  "Root Surgery": 880  },
+	"UHC":               { "Evaluation": 120, "Root Canals": 720,  "Root Surgery": 800  },
     "Delta":             { "Evaluation": 140, "Root Canals": 760,  "Root Surgery": 840  },
-    "Guardian":          { "Evaluation": 160, "Root Canals": 790,  "Root Surgery": 880  }
+    "Guardian":          { "Evaluation": 160, "Root Canals": 790,  "Root Surgery": 880  },
   };
 
   // ---- utilities

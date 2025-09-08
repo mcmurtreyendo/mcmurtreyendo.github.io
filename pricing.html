@@ -93,17 +93,17 @@
         <div class="calc2-radio-grid">
             
           <label class="calc2-radio"><input type="radio" name="insurer" value="noins" checked=""> <span>No Insurance</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="Delta" required=""> <span>Delta</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="aetna" required=""> <span>Aetna</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="anthem"> <span>Anthem BCBS</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="unitedconcordia"> <span>Ameritas</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="delta"> <span>Delta</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="aetna"> <span>Guardian</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="careington"> <span>Humana</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="metlife"> <span>Metlife</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="unitedconcordia"> <span>Mutual of Omaha</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="unitedconcordia" <span>Principal</span></label>
           <label class="calc2-radio"><input type="radio" name="insurer" value="uhc"> <span>United Healthcare</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="guardian"> <span>Guardian</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="B"> <span>B</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="anthem"> <span>Anthem</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="cigna"> <span>Cigna</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="delta" required=""> <span>Delta</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="uhc"> <span>United Healthcare</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="guardian"> <span>Guardian</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="anthem"> <span>Anthem</span></label>
-          <label class="calc2-radio"><input type="radio" name="insurer" value="cigna"> <span>Cigna</span></label>
+          <label class="calc2-radio"><input type="radio" name="insurer" value="unitedconcordia"> <span>United Concordia</span></label>
         </div>
       </fieldset>
 
@@ -243,45 +243,52 @@
         // --- FEES: per-tooth objects for EVERY procedure (ready for editing) ---
         var FEES = {
             delta: {
-                evaluation: { anterior: 76, bicuspid: 76, molar: 76 },
-                rootCanal: { anterior: 760, bicuspid: 760, molar: 760 },
-                rootSurgery: { anterior: 840, bicuspid: 840, molar: 840 },
-                retx: { anterior: 900, bicuspid: 900, molar: 900 },
+                evaluation: { anterior: 78, bicuspid: 78, molar: 78 },
+                rootCanal: { anterior: 676, bicuspid: 798, molar: 1007 },
+                rootSurgery: { anterior: 974, bicuspid: 995, molar: 1500 },
+                retx: { anterior: 837, bicuspid: 983, molar: 1340 },
                 cbct: { anterior: 200, bicuspid: 200, molar: 200 }
             },
             uhc: {
                 evaluation: { anterior: 94, bicuspid: 94, molar: 94 },
-                rootCanal: { anterior: 720, bicuspid: 720, molar: 720 },
-                rootSurgery: { anterior: 800, bicuspid: 800, molar: 800 },
-                retx: { anterior: 900, bicuspid: 900, molar: 900 },
+                rootCanal: { anterior: 682, bicuspid: 765, molar: 972 },
+                rootSurgery: { anterior: 1037, bicuspid: 1129, molar: 1680 },
+                retx: { anterior: 822, bicuspid: 927, molar: 1118 },
                 cbct: { anterior: 132, bicuspid: 132, molar: 132 }
             },
-            guardian: {
-                evaluation: { anterior: 160, bicuspid: 160, molar: 160 },
-                rootCanal: { anterior: 790, bicuspid: 790, molar: 790 },
-                rootSurgery: { anterior: 880, bicuspid: 880, molar: 880 },
-                retx: { anterior: 900, bicuspid: 900, molar: 900 },
+            aetna: {
+                evaluation: { anterior: 86, bicuspid: 86, molar: 86 },
+                rootCanal: { anterior: 735, bicuspid: 834, molar: 1086 },
+                rootSurgery: { anterior: 1112, bicuspid: 1178, molar: 1723 },
+                retx: { anterior: 851, bicuspid: 991, molar: 1218 },
                 cbct: { anterior: 200, bicuspid: 200, molar: 200 }
             },
-            aetna: {
-                evaluation: { anterior: 150, bicuspid: 150, molar: 150 },
-                rootCanal: { anterior: 780, bicuspid: 780, molar: 780 },
-                rootSurgery: { anterior: 860, bicuspid: 860, molar: 860 },
-                retx: { anterior: 900, bicuspid: 900, molar: 900 },
+            careington: {
+                evaluation: { anterior: 163.8, bicuspid: 163.8, molar: 163.8 },
+                rootCanal: { anterior: 1242, bicuspid: 1378.8, molar: 1562.4 },
+                rootSurgery: { anterior: 1846.5, bicuspid: 1999.5, molar: 3208.2 },
+                retx: { anterior: 1485.9, bicuspid: 1551.6, molar: 1983.6 },
                 cbct: { anterior: 200, bicuspid: 200, molar: 200 }
             },
             anthem: {
-                evaluation: { anterior: 155, bicuspid: 155, molar: 155 },
-                rootCanal: { anterior: 785, bicuspid: 785, molar: 785 },
-                rootSurgery: { anterior: 870, bicuspid: 870, molar: 870 },
-                retx: { anterior: 900, bicuspid: 900, molar: 900 },
+                evaluation: { anterior: 92, bicuspid: 92, molar: 92 },
+                rootCanal: { anterior: 747, bicuspid: 808, molar: 977 },
+                rootSurgery: { anterior: 1115, bicuspid: 1165, molar: 1730 },
+                retx: { anterior: 960, bicuspid: 1010, molar: 1162 },
                 cbct: { anterior: 200, bicuspid: 200, molar: 200 }
             },
-            cigna: {
-                evaluation: { anterior: 145, bicuspid: 145, molar: 145 },
-                rootCanal: { anterior: 770, bicuspid: 770, molar: 770 },
-                rootSurgery: { anterior: 850, bicuspid: 850, molar: 850 },
-                retx: { anterior: 900, bicuspid: 900, molar: 900 },
+            metlife: {
+                evaluation: { anterior: 68, bicuspid: 68, molar: 68 },
+                rootCanal: { anterior: 563, bicuspid: 673, molar: 910 },
+                rootSurgery: { anterior: 811, bicuspid: 878, molar: 1384 },
+                retx: { anterior: 705, bicuspid: 810, molar: 1040 },
+                cbct: { anterior: 200, bicuspid: 200, molar: 200 }
+            },
+            unitedconcordia: {
+                evaluation: { anterior: 65.21, bicuspid: 65.21, molar: 65.21 },
+                rootCanal: { anterior: 627.87, bicuspid: 732.05, molar: 988.39 },
+                rootSurgery: { anterior: 748.16, bicuspid: 822.1, molar: 1257.34 },
+                retx: { anterior: 678.57, bicuspid: 778.35, molar: 1111.25 },
                 cbct: { anterior: 200, bicuspid: 200, molar: 200 }
             }
         };

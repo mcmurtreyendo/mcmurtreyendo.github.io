@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patient Referral Form (Demo)</title>
+    <link rel="stylesheet" href="referral-form.css">
+    <style>
+        :root {
+            --bg: #0b1220;
+            --panel: #0e172a;
+            --muted: #94a3b8;
+            --text: #e2e8f0;
+            --primary: #4f46e5;
+            --accent: #06b6d4;
+            --ok: #22c55e;
+            --warn: #f59e0b;
+            --danger: #ef4444;
+            --chip: #1f2937;
+            --radius: 18px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, .35)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+            color: var(--text);
+            background: radial-gradient(1200px 800px at 10% -10%, rgba(79, 70, 229, .20), transparent 40%),
+                radial-gradient(1200px 800px at 90% 10%, rgba(6, 182, 212, .14), transparent 40%), var(--bg);
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 18px
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: conic-gradient(from 0deg, var(--primary), var(--accent), var(--primary));
+            box-shadow: var(--shadow)
+        }
+
+        .brand {
+            font-weight: 700
+        }
+
+        .sub {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid rgba(148, 163, 184, .2);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden
+        }
+
+        .card .inner {
+            padding: 22px 22px 6px
+        }
+
+        .stepper {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            padding: 14px;
+            background: rgba(15, 23, 42, .6);
+            border-bottom: 1px solid rgba(148, 163, 184, .18)
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(148, 163, 184, .18)
+        }
+
+        .step .num {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(148, 163, 184, .35);
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .step.active {
+            border-color: rgba(99, 102, 241, .6);
+            background: linear-gradient(180deg, rgba(99, 102, 241, .12), rgba(99, 102, 241, .06))
+        }
+
+        .step.active .num {
+            background: var(--primary);
+            border-color: transparent;
+            color: #fff
+        }
+
+        .step.done .num {
+            background: var(--ok);
+            color: #062;
+            border-color: transparent
+        }
+
+        .step .label {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        form {
+            display: block
+        }
+
+        fieldset {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            display: none
+        }
+
+        fieldset.active {
+            display: block
+        }
+
+        .grid {
+            display: grid;
+            gap: 14px
+        }
+
+        .g-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        .g-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr))
+        }
+
+        @media (max-width:920px) {
+
+            .g-2,
+            .g-3 {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .input label {
+            display: block;
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 6px
+        }
+
+        .required:after {
+            content: " *";
+            color: #fca5a5
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, .3);
+            background: rgba(2, 6, 23, .35);
+            color: var(--text);
+            outline: none
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--primary)
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        .hint {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .error {
+            color: #fecaca;
+            font-size: 13px;
+            display: none
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 14px;
+            border-top: 1px solid rgba(148, 163, 184, .18);
+            background: rgba(2, 6, 23, .35)
+        }
+
+        .btn {
+            appearance: none;
+            border: 0;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #fff;
+            background: var(--primary);
+            cursor: pointer
+        }
+
+        .btn.secondary {
+            background: rgba(148, 163, 184, .15);
+            color: var(--text)
+        }
+
+        .btn:disabled {
+            opacity: .5;
+            cursor: not-allowed
+        }
+
+        .chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .chip {
+            border: 1px solid rgba(148, 163, 184, .25);
+            background: var(--chip);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            cursor: pointer;
+            user-select: none
+        }
+
+        .chip.active {
+            background: rgba(99, 102, 241, .2);
+            border-color: rgba(99, 102, 241, .6)
+        }
+
+        .consent {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, .2);
+            background: rgba(255, 255, 255, .02)
+        }
+
+        .tooth-grid {
+            display: grid;
+            grid-template-columns: repeat(16, minmax(0, 1fr));
+            gap: 8px
+        }
+
+        .tooth {
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(148, 163, 184, .25);
+            border-radius: 12px;
+            padding: 10px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px
+        }
+
+        .tooth .n {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .pick {
+            width: 28px;
+            height: 28px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, .35);
+            background: rgba(2, 6, 23, .45);
+            color: var(--text);
+            cursor: pointer;
+            position: relative;
+            outline: none
+        }
+
+        .pick.active {
+            border-color: rgba(99, 102, 241, .7);
+            background: rgba(99, 102, 241, .18);
+            box-shadow: 0 0 0 1px rgba(99, 102, 241, .25) inset
+        }
+
+        .pick.active::after {
+            content: "✓";
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            font-size: 14px
+        }
+
+        .review {
+            padding: 10px;
+            border: 1px solid rgba(148, 163, 184, .2);
+            border-radius: 12px
+        }
+
+        .kv {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(148, 163, 184, .2)
+        }
+
+        .kv:last-child {
+            border-bottom: 0
+        }
+
+        .toast {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            padding: 12px 14px;
+            background: rgba(6, 182, 212, .12);
+            border: 1px solid rgba(6, 182, 212, .5);
+            color: #cffafe;
+            border-radius: 10px;
+            display: none
+        }
+
+        footer {
+            margin: 18px 0;
+            color: var(--muted);
+            font-size: 12px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+                <div class="brand">Patient Referral</div>
+                <div class="sub">Demo referral form — customize for your practice</div>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="stepper" id="stepper">
+                <div class="step active" data-step="1">
+                    <div class="num">1</div>
+                    <div class="label">Patient</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="num">2</div>
+                    <div class="label">Insurance</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="num">3</div>
+                    <div class="label">Referral Details</div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="num">4</div>
+                    <div class="label">Tooth Selection</div>
+                </div>
+                <div class="step" data-step="5">
+                    <div class="num">5</div>
+                    <div class="label">Review & Submit</div>
+                </div>
+            </div>
+
+            <div class="inner">
+                <form id="refForm" novalidate>
+                    <!-- STEP 1 -->
+                    <fieldset data-step="1" class="active" aria-labelledby="s1h">
+                        <h3 id="s1h">Patient Information</h3>
+                        <div class="grid g-3">
+                            <div class="input"><label class="required" for="firstName">First name</label><input
+                                    id="firstName" name="firstName" required autocomplete="given-name"></div>
+                            <div class="input"><label class="required" for="lastName">Last name</label><input
+                                    id="lastName" name="lastName" required autocomplete="family-name"></div>
+                            <div class="input"><label class="required" for="dob">Date of birth</label><input id="dob"
+                                    name="dob" type="date" required></div>
+                        </div>
+                        <div class="grid g-3">
+                            <div class="input"><label for="phone" class="required">Mobile phone</label><input id="phone"
+                                    name="phone" type="tel" required placeholder="(555) 555-5555" autocomplete="tel">
+                            </div>
+                            <div class="input"><label for="email">Email</label><input id="email" name="email"
+                                    type="email" placeholder="you@example.com" autocomplete="email"></div>
+                            <div class="input"><label for="sex">Sex</label>
+                                <select id="sex" name="sex">
+                                    <option value="">Select…</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Intersex</option>
+                                    <option>Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h4>Referring Provider</h4>
+                        <div class="grid g-3">
+                            <div class="input"><label class="required" for="refDoc">Doctor’s name</label><input
+                                    id="refDoc" name="refDoc" required placeholder="Dr. Jane Smith" /></div>
+                            <div class="input"><label for="refPractice">Practice</label><input id="refPractice"
+                                    name="refPractice" placeholder="Practice name" /></div>
+                            <div class="input"><label for="refPhone">Office phone</label><input id="refPhone"
+                                    name="refPhone" type="tel" /></div>
+                        </div>
+                        <div class="grid g-2">
+                            <div class="input"><label for="refEmail">Office email</label><input id="refEmail"
+                                    name="refEmail" type="email" /></div>
+                            <div class="input"><label for="refNotes">Notes to specialist</label><textarea id="refNotes"
+                                    name="refNotes"
+                                    placeholder="Pertinent history, imaging notes, antibiotic use, etc."></textarea>
+                            </div>
+                        </div>
+                        <div class="error" id="err1" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 2 -->
+                    <fieldset data-step="2" aria-labelledby="s2h">
+                        <h3 id="s2h">Insurance</h3>
+                        <div class="row"><label><input type="checkbox" id="noIns"> No insurance / self-pay</label></div>
+                        <div id="insWrap" class="grid g-3">
+                            <div class="input"><label for="insCompany">Company</label><input id="insCompany"
+                                    name="insCompany" placeholder="e.g., Delta Dental"></div>
+                            <div class="input"><label for="groupNum">Group #</label><input id="groupNum"
+                                    name="groupNum"></div>
+                            <div class="input"><label for="memberId">Member ID</label><input id="memberId"
+                                    name="memberId"></div>
+                            <div class="input"><label for="planMax">Plan max</label><input id="planMax" name="planMax"
+                                    type="number" min="0" step="1" placeholder="e.g., 1500"></div>
+                            <div class="input"><label for="maxLeft">Max left</label><input id="maxLeft" name="maxLeft"
+                                    type="number" min="0" step="1"></div>
+                            <div class="input"><label for="deductible">Deductible</label><input id="deductible"
+                                    name="deductible" type="number" min="0" step="1"></div>
+                            <div class="input"><label for="dedLeft">Deductible left</label><input id="dedLeft"
+                                    name="dedLeft" type="number" min="0" step="1"></div>
+                            <div class="input"><label for="insPhone">Insurance phone</label><input id="insPhone"
+                                    name="insPhone" type="tel"></div>
+                            <div class="input"><label for="subscriber">Subscriber (if not patient)</label><input
+                                    id="subscriber" name="subscriber"></div>
+                        </div>
+                        <div class="error" id="err2" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 3: Referral Details -->
+                    <fieldset data-step="3" aria-labelledby="s3h">
+                        <h3 id="s3h">Referral Details</h3>
+                        <div class="grid g-2">
+                            <div>
+                                <label class="required">Reason for visit</label>
+                                <div id="reasonChips" class="chips" role="group" aria-label="Reason">
+                                    <div class="chip" data-val="Exam & Pulp Test">Exam & Pulp Test</div>
+                                    <div class="chip" data-val="Root Canal Therapy">Root Canal Therapy</div>
+                                    <div class="chip" data-val="Retreatment">Retreatment</div>
+                                    <div class="chip" data-val="Periapical Surgery">Periapical Surgery</div>
+                                    <div class="chip" data-val="Bleaching">Bleaching</div>
+                                </div>
+                            </div>
+                            <div class="input"><label for="urgency">Urgency</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="">Select…</option>
+                                    <option>Routine (2–4 weeks)</option>
+                                    <option>Soon (1 week)</option>
+                                    <option>Urgent (48–72h)</option>
+                                    <option>Emergency (Pain/Swelling)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid g-3">
+                            <div class="input"><label for="symptoms">Chief complaint / symptoms</label><textarea id="symptoms"
+                                    name="symptoms" placeholder="Pain to biting, lingering cold, swelling, etc."></textarea></div>
+                            <div class="input"><label for="hx">Pertinent dental history</label><textarea id="hx" name="hx"
+                                    placeholder="Trauma, prior RCT, crowns, etc."></textarea></div>
+                            <div class="input"><label for="meds">Medications / allergies</label><textarea id="meds" name="meds"
+                                    placeholder="Optional"></textarea></div>
+                        </div>
+                        <div class="grid g-2">
+                            <div class="consent">
+                                <label><input type="checkbox" id="okXrays"> I will send radiographs separately</label>
+                                <div class="hint">You can attach X-rays when the email draft opens.</div>
+                            </div>
+                        </div>
+                        <div class="error" id="err3" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 4 -->
+                    <fieldset data-step="4" aria-labelledby="s4h">
+                        <h3 id="s4h">Select Teeth for Evaluation / Treatment</h3>
+                        <p class="hint">Maxillary (1–16) on top row, Mandibular (17–32) on bottom row. Click to toggle.
+                            <b>Shift-click</b> to select a range.</p>
+                        <div class="tooth-grid" id="toothGridTop"></div>
+                        <div style="height:8px"></div>
+                        <div class="tooth-grid" id="toothGridBottom"></div>
+                        <div class="row" style="margin-top:10px">
+                            <button type="button" class="btn secondary" id="clearTeeth">Clear selection</button>
+                        </div>
+                        <div class="error" id="err4" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 5 -->
+                    <fieldset data-step="5" aria-labelledby="s5h">
+                        <h3 id="s5h">Review</h3>
+                        <div id="reviewPane" class="review" aria-live="polite"></div>
+                        <p class="hint" style="margin-top:8px">Submitting will open a printable summary in a new tab
+                            (you can print or save as PDF).</p>
+                        <div class="error" id="err5" role="alert"></div>
+                    </fieldset>
+
+                    <div class="actions">
+                        <div class="row"><button type="button" class="btn secondary" id="prevBtn">Back</button></div>
+                        <div class="row">
+                            <button type="button" class="btn" id="nextBtn">Next</button>
+                            <button type="submit" class="btn" id="submitBtn" style="display:none">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>© <span id="yr"></span> McMurtrey Endodontics - Tyler McMurtrey</footer>
+    </div>
+
+    <!-- Load JS externally so the HTML parser never sees inline script content -->
+    <script src="assets\js\referral-form.js" defer></script>
+</body>
+
+</html>

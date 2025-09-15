@@ -283,3 +283,103 @@ form.addEventListener('submit', async (e)=>{
 document.getElementById('yr').textContent = new Date().getFullYear();
 setStep(1);
 window.addEventListener('error', (e)=>{ try{ toastMsg('JS error: ' + e.message); } catch(_){} });
+
+/* ---- Submit Popup ---- */
+// --- Lightweight "Referral Sent" modal (no HTML/CSS edits required) ---
+(function () {
+  function showReferralModal(message) {
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Submission confirmation');
+    overlay.style.position = 'fixed';
+    overlay.style.inset = '0';
+    overlay.style.background = 'rgba(2,6,23,.55)'; // semi-transparent dark
+    overlay.style.display = 'grid';
+    overlay.style.placeItems = 'center';
+    overlay.style.zIndex = '9999';
+    overlay.style.backdropFilter = 'blur(2px)';
+
+    // Create modal container
+    const panel = document.createElement('div');
+    panel.style.maxWidth = '520px';
+    panel.style.margin = '16px';
+    panel.style.padding = '20px 22px';
+    panel.style.borderRadius = '14px';
+    panel.style.boxShadow = 'var(--shadow)';
+    panel.style.border = '1px solid rgba(148,163,184,.25)';
+    panel.style.background = 'var(--panel)';
+    panel.style.color = 'var(--text)';
+
+    // Title
+    const h = document.createElement('h3');
+    h.textContent = 'Referral Sent';
+    h.style.margin = '0 0 8px 0';
+    h.style.fontWeight = '700';
+    h.style.color = 'var(--text)';
+
+    // Message
+    const p = document.createElement('p');
+    p.textContent = message || 'Thank you for reaching out. Our team will review your referral and contact the patient promptly.';
+    p.style.margin = '0 0 14px 0';
+    p.style.color = 'var(--muted)';
+    p.style.fontSize = '14px';
+
+    // Actions
+    const row = document.createElement('div');
+    row.style.display = 'flex';
+    row.style.justifyContent = 'flex-end';
+    row.style.gap = '10px';
+
+    const ok = document.createElement('button');
+    ok.type = 'button';
+    ok.className = 'btn';
+    ok.textContent = 'OK';
+    ok.style.background = 'var(--primary)';
+
+    // Append
+    row.appendChild(ok);
+    panel.appendChild(h);
+    panel.appendChild(p);
+    panel.appendChild(row);
+    overlay.appendChild(panel);
+    document.body.appendChild(overlay);
+
+    // Focus management
+    ok.focus();
+
+    // Close handlers
+    function close() {
+      window.removeEventListener('keydown', onKey);
+      overlay.removeEventListener('click', onOverlay);
+      overlay.remove();
+    }
+    function onKey(e) {
+      if (e.key === 'Escape') close();
+    }
+    function onOverlay(e) {
+      if (e.target === overlay) close();
+    }
+    ok.addEventListener('click', close);
+    window.addEventListener('keydown', onKey);
+    overlay.addEventListener('click', onOverlay);
+
+    // Auto-dismiss after 4s (still allow manual close)
+    setTimeout(() => {
+      if (document.body.contains(overlay)) close();
+    }, 4000);
+  }
+
+  // Hook into the form submit without changing existing behavior
+  window.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('refForm');
+    if (!form) return;
+
+    form.addEventListener('submit', function () {
+      // Show a professional confirmation message right after submit
+      showReferralModal('Thank you. Your referral has been submitted successfully. We will follow up shortly.');
+      // NOTE: We do NOT call preventDefault(); this preserves your current submit flow.
+    });
+  });
+})();

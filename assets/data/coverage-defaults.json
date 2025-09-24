@@ -1,0 +1,9 @@
+{
+  "delta":    { "endo": 0.8, "diag": 1.0, "cbct": 0.0 },
+  "uhc":      { "endo": 0.8, "diag": 0.8, "cbct": 0.0 },
+  "guardian": { "endo": 0.8, "diag": 0.8, "cbct": 0.0 },
+  "aetna":    { "endo": 0.8, "diag": 0.8, "cbct": 0.0 },
+  "anthem":   { "endo": 0.8, "diag": 0.8, "cbct": 0.0 },
+  "cigna":    { "endo": 0.8, "diag": 0.8, "cbct": 0.0 },
+  "noins":    { "endo": 0.0, "diag": 0.0, "cbct": 0.0 }
+}

@@ -26,7 +26,7 @@
       "evaluation": { "anterior": 86,  "bicuspid": 86,  "molar": 86  },
       "rootCanal":  { "anterior": 735, "bicuspid": 834, "molar": 1086 },
       "rootSurgery":{ "anterior": 1112,"bicuspid": 1178,"molar": 1723 },
-      "retx":       { "anterior": 851, "bicuspid": 991, "molar": 1218 },
+      "retx":       { "anterior": 768, "bicuspid": 937, "molar": 993 },
       "cbct":       { "anterior": 200, "bicuspid": 200, "molar": 200 }
     },
     "careington": {

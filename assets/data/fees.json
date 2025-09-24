@@ -1,0 +1,61 @@
+{
+  "currency": "USD",
+  "cash": {
+    "evaluation": { "anterior": 122, "bicuspid": 122, "molar": 122 },
+    "rootCanal":  { "anterior": 1080, "bicuspid": 1250, "molar": 1425 },
+    "rootSurgery":{ "anterior": 1120, "bicuspid": 1120, "molar": 1120 },
+    "retx":       { "anterior": 900,  "bicuspid": 900,  "molar": 900  },
+    "cbct":       { "anterior": 200,  "bicuspid": 200,  "molar": 200  }
+  },
+  "insurers": {
+    "delta": {
+      "evaluation": { "anterior": 78,  "bicuspid": 78,  "molar": 78  },
+      "rootCanal":  { "anterior": 676, "bicuspid": 798, "molar": 1007 },
+      "rootSurgery":{ "anterior": 974, "bicuspid": 995, "molar": 1500 },
+      "retx":       { "anterior": 837, "bicuspid": 983, "molar": 1340 },
+      "cbct":       { "anterior": 200, "bicuspid": 200, "molar": 200 }
+    },
+    "uhc": {
+      "evaluation": { "anterior": 94,  "bicuspid": 94,  "molar": 94  },
+      "rootCanal":  { "anterior": 682, "bicuspid": 765, "molar": 972 },
+      "rootSurgery":{ "anterior": 1062,"bicuspid": 1154,"molar": 1705 },
+      "retx":       { "anterior": 822, "bicuspid": 927, "molar": 1118 },
+      "cbct":       { "anterior": 132, "bicuspid": 132, "molar": 132 }
+    },
+    "aetna": {
+      "evaluation": { "anterior": 86,  "bicuspid": 86,  "molar": 86  },
+      "rootCanal":  { "anterior": 735, "bicuspid": 834, "molar": 1086 },
+      "rootSurgery":{ "anterior": 1112,"bicuspid": 1178,"molar": 1723 },
+      "retx":       { "anterior": 851, "bicuspid": 991, "molar": 1218 },
+      "cbct":       { "anterior": 200, "bicuspid": 200, "molar": 200 }
+    },
+    "careington": {
+      "evaluation": { "anterior": 163.8, "bicuspid": 163.8, "molar": 163.8 },
+      "rootCanal":  { "anterior": 1242,  "bicuspid": 1378.8,"molar": 1562.4 },
+      "rootSurgery":{ "anterior": 1846.5,"bicuspid": 1999.5,"molar": 3208.2 },
+      "retx":       { "anterior": 1485.9,"bicuspid": 1551.6,"molar": 1983.6 },
+      "cbct":       { "anterior": 200,   "bicuspid": 200,   "molar": 200 }
+    },
+    "anthem": {
+      "evaluation": { "anterior": 92,  "bicuspid": 92,  "molar": 92  },
+      "rootCanal":  { "anterior": 747, "bicuspid": 808, "molar": 977 },
+      "rootSurgery":{ "anterior": 1115,"bicuspid": 1165,"molar": 1730 },
+      "retx":       { "anterior": 960, "bicuspid": 1010,"molar": 1162 },
+      "cbct":       { "anterior": 200, "bicuspid": 200, "molar": 200 }
+    },
+    "metlife": {
+      "evaluation": { "anterior": 68,  "bicuspid": 68,  "molar": 68  },
+      "rootCanal":  { "anterior": 563, "bicuspid": 673, "molar": 910 },
+      "rootSurgery":{ "anterior": 811, "bicuspid": 878, "molar": 1384 },
+      "retx":       { "anterior": 705, "bicuspid": 810, "molar": 1040 },
+      "cbct":       { "anterior": 200, "bicuspid": 200, "molar": 200 }
+    },
+    "unitedconcordia": {
+      "evaluation": { "anterior": 65.21,  "bicuspid": 65.21,  "molar": 65.21 },
+      "rootCanal":  { "anterior": 627.87, "bicuspid": 732.05, "molar": 988.39 },
+      "rootSurgery":{ "anterior": 748.16, "bicuspid": 822.1,  "molar": 1257.34 },
+      "retx":       { "anterior": 678.57, "bicuspid": 778.35, "molar": 1111.25 },
+      "cbct":       { "anterior": 200,    "bicuspid": 200,    "molar": 200 }
+    }
+  }
+}

@@ -3,8 +3,8 @@
   "cash": {
     "evaluation": { "anterior": 122, "bicuspid": 122, "molar": 122 },
     "rootCanal":  { "anterior": 1080, "bicuspid": 1250, "molar": 1425 },
-    "rootSurgery":{ "anterior": 1120, "bicuspid": 1120, "molar": 1120 },
-    "retx":       { "anterior": 900,  "bicuspid": 900,  "molar": 900  },
+    "rootSurgery":{ "anterior": 1685, "bicuspid": 1875, "molar": 3001 },
+    "retx":       { "anterior": 1350,  "bicuspid": 1520,  "molar": 1820  },
     "cbct":       { "anterior": 200,  "bicuspid": 200,  "molar": 200  }
   },
   "insurers": {

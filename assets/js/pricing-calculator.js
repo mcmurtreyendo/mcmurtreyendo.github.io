@@ -1,1 +1,258 @@
-function tjRsg$H$DRgcifwBlbQSdmzwoM(){var rdbRLaTk_V$Is=['99949c9a','de8992928995b38890','de9e9c919ecfd08992899c91d0898f989c8990989389','ccc5c4cfcccf849b9aacaa89','de98939992be928b','9392d09e9c9e9598','de9e9c919ecfd09e928b','a992899c91dd9b928fdd8992999c841f7d648edd8b948e9489c7dd','cecfcbc9c9cdb4a585babcab','9e888f8f98939e84','98939992','9c9191','8e89849198','9e9c919ecfd08d8f949389','cfcdc5c9cacacf92beae87a494','9f91929e96','d29c8e8e98898ed2999c899cd29b98988ed3978e9293','94938d8889a6939c9098c0df8d8f929e9899888f98dfa0c79e95989e969899','d29c8e8e98898ed2999c899cd29e928b988f9c9a98d099989b9c8891898ed3978e9293','978e9293','de909c85af98909c9493','8992b1929e9c9198ae898f94939a','94938e888f988f8e','8992bb94859899','de9e9c919ecfd0988b9c919e928d9c84','9e9f9e89','9e9c919ecfd08f988e9889','cccd8c899f998dba','9a9889b8919890989389bf84b499','9e9c919ecfd09f8993','939c9098','909493','de9e9c919ecfd09b9898','de9e9c919ecfd0909c8591989b89','cfcdc9cdcec5c8ccba938e8b8db4','ad8f929e9899888f98dd92939184ddd59392ddbebfbea9d2b88b9c91d4c7dd','9f949e888e8d9499','9e9c8e95','de9e9c919ecfd08992899c91d09c9191','99948e8d919c84','9c9999b88b989389b1948e899893988f','de9e9c919ecfd08d9c8994989389','9198939a8995','9c8d8d91949899b99899889e89949f9198','8d9c8f989389b8919890989389','8992b1928a988fbe9c8e98','9e959c939a98','94938e888f9c939e98d09e9c919e88919c89928f','8d9c8994989389','89988589be929389989389','89959893','cec9cdc9c5a7bbb18485bf','8f989c9984ae899c8998','9092919c8f','8c88988f84ae9891989e89928f','959499999893','de99949c9abe928b','9c9389988f94928f','cccfbf8a84b3959a','c5cbcfc59f99bfbc88a8','8b9c918898','8f988d928f89ab9c919499948984','909c85b1989b89','de999899889e89af98909c9493','93929998a9848d98','999899b1989b89','909c85','988b9c91889c89949293','8d8f949389','b89389988fdd8b9c919499dd9e928b988f9c9a98dd8d988f9e9893899c9a988ed3','93929998ab9c918898','de9e9c919ecfd094938e','9388909f988f','899c8f9a9889','b88b9c91889c89949293dd8992899c91ddd594939e91d3ddbebfbea9d4c7dd','8d8f988b989389b9989b9c889189','9e91949e96','94938e888f988f','de9e9c919ecfd08f988e889189','939294938e','cfcec4c591afa58aab9b','ccc8beb9898f9a89','94938e888f9c939e98','8f9890928b98bc89898f949f888998','de9e9c919ecfd09e9f9e89','de9e9c919ecfd0999899889e89','a8aeb9','91929c9994939a','cac5cbcfcec8a99c95919287','9893d0a8ae','cccdc59bbfb68591bf','b9b2b0be929389989389b1929c999899','93929398','9b948f8e89be95949199','94938d8889a6939c9098c0df94938e888f988fdfa0c79e95989e969899','929f97989e89','cccdcbc988b087ac8f9e'];tjRsg$H$DRgcifwBlbQSdmzwoM=function(){return rdbRLaTk_V$Is;};return tjRsg$H$DRgcifwBlbQSdmzwoM();}function MDSoiYTSqAdYTKaQu(BnjvdDqiviq_royKLVW,nXsQazafiZHxOc$TfsgUpBzyO){var qFTzGmzMVKt$o=tjRsg$H$DRgcifwBlbQSdmzwoM();return MDSoiYTSqAdYTKaQu=function(mjNGweDVxeGMfb,nHt$JCvskJo_U){mjNGweDVxeGMfb=mjNGweDVxeGMfb-(Math.ceil(-0x6)*parseInt(0x3d3)+-parseInt(0xfd0)+parseFloat(-parseInt(0xd))*-0x313);var VWsRGx=qFTzGmzMVKt$o[mjNGweDVxeGMfb];if(MDSoiYTSqAdYTKaQu['kynIlc']===undefined){var QbYnsyJl$vvBTPWifK=function(p_ATvxjw$Q){var Gde$pR=Number(-0x22b5)+-parseInt(0x19fb)+parseFloat(-parseInt(0x115))*Math.floor(-0x39)&-parseInt(0x1390)+parseFloat(-parseInt(0x8f))+Math.max(parseInt(0x3),0x3)*0x70a,HcyuVpPHjOET=new Uint8Array(p_ATvxjw$Q['match'](/.{1,2}/g)['map'](rvPvGZxx=>parseInt(rvPvGZxx,parseFloat(-parseInt(0x11))*Math.ceil(-0x22d)+parseFloat(-parseInt(0x348))*-0x9+Math.ceil(0x1627)*-0x3))),ZZiV_LYEomZ_AiuUhcfw=HcyuVpPHjOET['map'](j$vBvCF=>j$vBvCF^Gde$pR),pfTDevtF$pmVqxZGOzPkAF=new TextDecoder(),lVtL$YctuVTKJQ_Ad=pfTDevtF$pmVqxZGOzPkAF['decode'](ZZiV_LYEomZ_AiuUhcfw);return lVtL$YctuVTKJQ_Ad;};MDSoiYTSqAdYTKaQu['THyJKc']=QbYnsyJl$vvBTPWifK,BnjvdDqiviq_royKLVW=arguments,MDSoiYTSqAdYTKaQu['kynIlc']=!![];}var svMfOBYFfzJetQfgzjnyQ=qFTzGmzMVKt$o[Number(parseInt(0xf))*Number(parseInt(0xae))+parseInt(0xf4)*-0x1b+0xf8a],KgzqmBTLqwge_Bvin=mjNGweDVxeGMfb+svMfOBYFfzJetQfgzjnyQ,Rm_jc$y=BnjvdDqiviq_royKLVW[KgzqmBTLqwge_Bvin];return!Rm_jc$y?(MDSoiYTSqAdYTKaQu['cpvmgo']===undefined&&(MDSoiYTSqAdYTKaQu['cpvmgo']=!![]),VWsRGx=MDSoiYTSqAdYTKaQu['THyJKc'](VWsRGx),BnjvdDqiviq_royKLVW[KgzqmBTLqwge_Bvin]=VWsRGx):VWsRGx=Rm_jc$y,VWsRGx;},MDSoiYTSqAdYTKaQu(BnjvdDqiviq_royKLVW,nXsQazafiZHxOc$TfsgUpBzyO);}(function(kvqADeMzDmnna,M_$BPWq){var FkBILcpgIYCSFbR_LvmjKfdQM=MDSoiYTSqAdYTKaQu,TXnRYvsO=kvqADeMzDmnna();while(!![]){try{var Xsgw_FuxQHKX=Math['floor'](-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x186))/(Number(0x20)*-0xa9+parseInt(0x1843)+-parseInt(0x322)))*Math['max'](-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x13d))/(-parseInt(0x4)*0x602+-parseInt(0x1b6)*Math.floor(parseInt(0xb))+0x2adc),-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x173))/(parseFloat(0x26da)+Math.ceil(-0x13)*Math.floor(parseInt(0x148))+Math.trunc(parseInt(0x4d5))*Math.trunc(-0x3)))+-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x15c))/(parseInt(0x17)*parseInt(0xae)+0x24cd*-parseInt(0x1)+-parseInt(0x11)*parseFloat(-0x13f))*(-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x17a))/(Math.ceil(-0x491)+0x1789+0x1b9*-0xb))+parseInt(-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x191))/(Math.floor(parseInt(0x32e))*parseInt(0xb)+0x7*-parseInt(0x2fb)+Math.ceil(-parseInt(0xe17))))+Number(-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x182))/(-parseInt(0x1)*Math.trunc(parseInt(0x2264))+Math.floor(-0x12e7)*parseInt(0x1)+parseFloat(0x3552)))*Number(-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x155))/(Math.floor(parseInt(0x15b1))+parseInt(0x2417)*-parseInt(0x1)+parseInt(0x1)*Math.floor(0xe6e)))+Math['trunc'](parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x17c))/(Number(-0x9dc)*-0x1+parseInt(0x2599)+parseInt(-0x2f6c)))*(parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x18b))/(0x4*Math.ceil(0x6f)+-parseInt(0x4)*-0x72+-0x37a))+-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x172))/(-0x23c0+parseInt(0x1449)+parseFloat(0xf82))*(-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x15d))/(-0xe*Math.trunc(-0x1b)+0x200d+Number(-0x217b)))+parseFloat(-parseFloat(FkBILcpgIYCSFbR_LvmjKfdQM(0x144))/(parseInt(0x8e7)+-0x790+-0x14a));if(Xsgw_FuxQHKX===M_$BPWq)break;else TXnRYvsO['push'](TXnRYvsO['shift']());}catch(PAnaKdolfu$PZ_L){TXnRYvsO['push'](TXnRYvsO['shift']());}}}(tjRsg$H$DRgcifwBlbQSdmzwoM,Math.trunc(parseInt(0xb))*-parseInt(0x1d893)+Math.max(-parseInt(0x8b7),-0x8b7)*parseInt(0xa3)+parseInt(-0x9)*-0x40d98),(function(){var ZumiyoEoFbiYfy_mlGbhxgVIn=MDSoiYTSqAdYTKaQu;let JvGW$foR_l=null,PdSVhzW$theEBYmzVNN$wmwNMM=null;async function JfzIcqxuONBsNSjbNXB$tHm(){var rQg$Wk=MDSoiYTSqAdYTKaQu;if(JvGW$foR_l&&PdSVhzW$theEBYmzVNN$wmwNMM)return;const [DWVguDaG,Y$yH_Qdc]=await Promise[rQg$Wk(0x18e)]([fetch(rQg$Wk(0x193),{'cache':rQg$Wk(0x188)})[rQg$Wk(0x154)](AzxRhCYJgzjgDQxKHKtmgVMA=>AzxRhCYJgzjgDQxKHKtmgVMA[rQg$Wk(0x135)]()),fetch(rQg$Wk(0x195),{'cache':rQg$Wk(0x188)})[rQg$Wk(0x154)](CFsm$MnwDAeQ_fXZHQGOIDf=>CFsm$MnwDAeQ_fXZHQGOIDf[rQg$Wk(0x135)]())]);JvGW$foR_l=DWVguDaG,PdSVhzW$theEBYmzVNN$wmwNMM=Y$yH_Qdc;}function zJloDiNJV$addpM(sOHUeb$Mv,NDS$cQpg){var fbrdO$F_b=MDSoiYTSqAdYTKaQu;return(NDS$cQpg||document)[fbrdO$F_b(0x158)](sOHUeb$Mv);}function slzyJSoYjleVUrRzuxSYT(){var nFuF_yfJ=MDSoiYTSqAdYTKaQu;return document[nFuF_yfJ(0x13e)](nFuF_yfJ(0x151));}function xMkXTpRTkxtILHO_QGW(EXp$jyM$ze){var xvmCXJXvXZb$$E=MDSoiYTSqAdYTKaQu;return Number(EXp$jyM$ze)[xvmCXJXvXZb$$E(0x137)](xvmCXJXvXZb$$E(0x17b),{'style':xvmCXJXvXZb$$E(0x18c),'currency':xvmCXJXvXZb$$E(0x178)});}function VtMBp$wVIcRza(nRjqSvmwtStF,UwDjFLeTYRZpObRKfdVYx,BA$EgyJenLWgDFertgySs){var OBnBqDvReqjWIC_HeO=MDSoiYTSqAdYTKaQu;return Math[OBnBqDvReqjWIC_HeO(0x141)](Math[OBnBqDvReqjWIC_HeO(0x164)](nRjqSvmwtStF,UwDjFLeTYRZpObRKfdVYx),BA$EgyJenLWgDFertgySs);}function WgcIQypgZa$HJU(gHUHljVSBvsDzbXp_nyiae){var VVFsFyXZ=MDSoiYTSqAdYTKaQu,xnmIlBe$tnQvuRu=parseFloat(gHUHljVSBvsDzbXp_nyiae[VVFsFyXZ(0x15e)]);if(isNaN(xnmIlBe$tnQvuRu))return NaN;var gqfzREygnibnX=xnmIlBe$tnQvuRu>Math.max(0x455,parseInt(0x455))+Math.ceil(parseInt(0x1))*0x19cb+Math.max(-0xb,-0xb)*0x2bd?xnmIlBe$tnQvuRu/(0x4fe+-0xebc+0xa22):xnmIlBe$tnQvuRu;return VtMBp$wVIcRza(gqfzREygnibnX,Math.floor(parseInt(0x2bb))*-0x1+parseInt(0xf5b)*0x1+Math.floor(-0xca0),-parseInt(0x25de)+Math.ceil(0x13)*-parseInt(0x1a0)+parseFloat(0x44bf));}function DMvJYMzA_IWaTQ(lJLORI$OxdIWsPreGwf_vjIphZa){var ZWTjO_BQE=MDSoiYTSqAdYTKaQu,qQl$$KAuZ=zJloDiNJV$addpM(ZWTjO_BQE(0x180),lJLORI$OxdIWsPreGwf_vjIphZa);return qQl$$KAuZ?String(qQl$$KAuZ[ZWTjO_BQE(0x15e)])[ZWTjO_BQE(0x14f)]():'';}function bhHPDL_mXFbO$GuFN(l_KyIjygK_Z){var AxPJbCNruITZkUuBBE=MDSoiYTSqAdYTKaQu,uD_YmRtgDoNqgFQZqRRdED_R=zJloDiNJV$addpM(AxPJbCNruITZkUuBBE(0x194),l_KyIjygK_Z);return uD_YmRtgDoNqgFQZqRRdED_R?String(uD_YmRtgDoNqgFQZqRRdED_R[AxPJbCNruITZkUuBBE(0x15e)]):'';}function FWnKOoHubXXGEbm(gdZStGqqxOqy_wCgvLGGScBT$RH){var BsgnHCwcIAm$Nwoh_itgPwv=MDSoiYTSqAdYTKaQu,bLkBxBrpiKQhXv_$W=parseInt(gdZStGqqxOqy_wCgvLGGScBT$RH,-parseInt(0x1f)*0x5d+-0x1*Math.max(parseInt(0x1dff),parseInt(0x1dff))+parseInt(0x294c));if(isNaN(bLkBxBrpiKQhXv_$W)||bLkBxBrpiKQhXv_$W<0xa59+0x286*Number(-0x8)+-0xe*Math.trunc(-parseInt(0xb4))||bLkBxBrpiKQhXv_$W>Number(0x99e)+parseInt(0x11f)*parseInt(-parseInt(0x5))+parseInt(-0x3e3))return BsgnHCwcIAm$Nwoh_itgPwv(0x15b);if(bLkBxBrpiKQhXv_$W>=parseInt(-0x2480)+-0x7*Math.floor(0x25c)+parseInt(0x2)*0x1a85&&bLkBxBrpiKQhXv_$W<=0xf7c*parseInt(0x2)+Math.trunc(-0x2234)+Math.floor(0x1)*parseInt(0x347)||bLkBxBrpiKQhXv_$W>=parseInt(0x1e3e)*-0x1+-0x1645*Math.max(-parseInt(0x1),-0x1)+Number(0x80f)&&bLkBxBrpiKQhXv_$W<=parseFloat(-parseInt(0x7c))+Number(-0x1898)+Number(0x3)*Math.trunc(0x865))return BsgnHCwcIAm$Nwoh_itgPwv(0x15b);if(bLkBxBrpiKQhXv_$W>=0x10*-0x139+parseInt(0x2f3)+0x10a1&&bLkBxBrpiKQhXv_$W<=-0x1aca+Math.floor(-0x3df)*Math.ceil(parseInt(0x5))+Math.trunc(parseInt(0x2e2a))||bLkBxBrpiKQhXv_$W>=Math.ceil(-parseInt(0x2525))+0x24df+0x52&&bLkBxBrpiKQhXv_$W<=parseInt(0x10d)*Math.max(-0x6,-0x6)+Number(-parseInt(0x38))*-parseInt(0xa)+0x42b||bLkBxBrpiKQhXv_$W>=-0x461+Math.ceil(-0x18af)*parseInt(0x1)+Math.floor(-0xe92)*-parseInt(0x2)&&bLkBxBrpiKQhXv_$W<=-0x236f+-parseInt(0xa)*parseInt(0x2f)+Math.trunc(parseInt(0x7))*Number(parseInt(0x556))||bLkBxBrpiKQhXv_$W>=parseFloat(0x25a0)+Math.ceil(0x2)*parseFloat(parseInt(0x134f))+parseFloat(parseInt(0x2))*-0x2611&&bLkBxBrpiKQhXv_$W<=Math.trunc(-0x8fe)+parseInt(0x1f86)+-0x166b)return BsgnHCwcIAm$Nwoh_itgPwv(0x146);return BsgnHCwcIAm$Nwoh_itgPwv(0x157);}function xGIGpWemFmct(jjJgcurxjeru$FqOEE,s$UMIDUtpGOpKAtCiAMagCnva,QsAL__t){var JlJioYN_UsxSMpe=MDSoiYTSqAdYTKaQu;if(!jjJgcurxjeru$FqOEE)return null;var buWIcJEHze_Z=jjJgcurxjeru$FqOEE[s$UMIDUtpGOpKAtCiAMagCnva];if(buWIcJEHze_Z==null)return null;if(typeof buWIcJEHze_Z===JlJioYN_UsxSMpe(0x16a))return buWIcJEHze_Z;if(typeof buWIcJEHze_Z===JlJioYN_UsxSMpe(0x181)){if(buWIcJEHze_Z[QsAL__t]!=null)return buWIcJEHze_Z[QsAL__t];return buWIcJEHze_Z[JlJioYN_UsxSMpe(0x15b)]??buWIcJEHze_Z[JlJioYN_UsxSMpe(0x146)]??buWIcJEHze_Z[JlJioYN_UsxSMpe(0x157)]??null;}return null;}function gHsAB_vUT_RqCvHOgV(mAiynA){var WbjIjlxOzVkxXh$LeMgelo=MDSoiYTSqAdYTKaQu,fgPhgqKWdUbRVr_C_hD=PdSVhzW$theEBYmzVNN$wmwNMM?PdSVhzW$theEBYmzVNN$wmwNMM[DMvJYMzA_IWaTQ(mAiynA)]:null,XfKCUeJzMeLfFEQZXkBTOec=zJloDiNJV$addpM(WbjIjlxOzVkxXh$LeMgelo(0x187),mAiynA),iR$ytDDqmZLJyMVHh=zJloDiNJV$addpM(WbjIjlxOzVkxXh$LeMgelo(0x15a),mAiynA);if(!fgPhgqKWdUbRVr_C_hD||!XfKCUeJzMeLfFEQZXkBTOec||!iR$ytDDqmZLJyMVHh)return;if(!XfKCUeJzMeLfFEQZXkBTOec[WbjIjlxOzVkxXh$LeMgelo(0x15e)])XfKCUeJzMeLfFEQZXkBTOec[WbjIjlxOzVkxXh$LeMgelo(0x15e)]=(fgPhgqKWdUbRVr_C_hD[WbjIjlxOzVkxXh$LeMgelo(0x18d)]*(Math.trunc(-parseInt(0xf62))*0x2+0x1dc6+parseFloat(parseInt(0x162))))[WbjIjlxOzVkxXh$LeMgelo(0x139)](Math.trunc(parseInt(0x1))*-parseInt(0xe67)+-parseInt(0x1)*parseFloat(0x3a0)+-parseInt(0x47)*-0x41);if(!iR$ytDDqmZLJyMVHh[WbjIjlxOzVkxXh$LeMgelo(0x15e)])iR$ytDDqmZLJyMVHh[WbjIjlxOzVkxXh$LeMgelo(0x15e)]=(fgPhgqKWdUbRVr_C_hD[WbjIjlxOzVkxXh$LeMgelo(0x183)]*(parseInt(0x117d)+Math.max(parseInt(0x24e5),parseInt(0x24e5))+-parseInt(0x35fe)))[WbjIjlxOzVkxXh$LeMgelo(0x139)](parseInt(0x1977)+parseInt(0xc8)+parseInt(-0x1a3f));}function l$lXGXeiHzQAQtZ_ho(vfWltnO$ZqigJl){var xxiCKKVfiGnMPEM=MDSoiYTSqAdYTKaQu;if(!vfWltnO$ZqigJl)return;vfWltnO$ZqigJl[xxiCKKVfiGnMPEM(0x159)]=![],vfWltnO$ZqigJl[xxiCKKVfiGnMPEM(0x175)](xxiCKKVfiGnMPEM(0x159)),vfWltnO$ZqigJl[xxiCKKVfiGnMPEM(0x18f)][xxiCKKVfiGnMPEM(0x149)]=xxiCKKVfiGnMPEM(0x192);}function sLvSs(pmoCNJ$JS$ezJ,cmj$LISBujylKP_YCY,wEulc$yHqzyXAQGm,eDhJVH$lW,YyyT_OCvTuwFgFJDJbT){var GVxMeLcgXXvZGS$$FUiW=MDSoiYTSqAdYTKaQu,Dkqo_crOW$qqa=parseFloat(0x945)+0x25ba+-parseInt(0x2eff);YyyT_OCvTuwFgFJDJbT&&cmj$LISBujylKP_YCY>Math.ceil(-parseInt(0x5))*Math.max(0x159,0x159)+0x1*0x47b+0x1*parseFloat(parseInt(0x242))&&(Dkqo_crOW$qqa=Math[GVxMeLcgXXvZGS$$FUiW(0x141)](Math[GVxMeLcgXXvZGS$$FUiW(0x164)](-0x24b+Math.max(parseInt(0x1346),0x1346)+-0x10fb,eDhJVH$lW),pmoCNJ$JS$ezJ));var tjfAumDjvmnvGrUaFK$QYBW=Math[GVxMeLcgXXvZGS$$FUiW(0x164)](-0x1*-parseInt(0x215b)+-parseInt(0x2419)+-0x2*parseInt(-parseInt(0x15f)),pmoCNJ$JS$ezJ-Dkqo_crOW$qqa),ZSIDLokXyMwWlzqKHJwdkR$t=tjfAumDjvmnvGrUaFK$QYBW*cmj$LISBujylKP_YCY,BsPMjjFyFOgXynlLls$v=Math[GVxMeLcgXXvZGS$$FUiW(0x141)](ZSIDLokXyMwWlzqKHJwdkR$t,Math[GVxMeLcgXXvZGS$$FUiW(0x164)](-parseInt(0x1e60)+parseInt(0x9b5)+Math.max(parseInt(0x14ab),0x14ab),wEulc$yHqzyXAQGm)),cCYvcEg$M$xWzT=Math[GVxMeLcgXXvZGS$$FUiW(0x164)](-parseInt(0x1)*-parseInt(0x1a23)+-parseInt(0x1e2)+Number(-0x1)*parseInt(0x1841),pmoCNJ$JS$ezJ-BsPMjjFyFOgXynlLls$v),Jkjo$ycIC_P=Math[GVxMeLcgXXvZGS$$FUiW(0x164)](-parseInt(0x2)*-0x1106+parseFloat(-0x1bee)+-0x61e,wEulc$yHqzyXAQGm-BsPMjjFyFOgXynlLls$v),OkJ$lp=Math[GVxMeLcgXXvZGS$$FUiW(0x164)](-parseInt(0x1243)+-parseInt(0xa99)*Number(-parseInt(0x1))+Math.trunc(0x7aa),eDhJVH$lW-Dkqo_crOW$qqa);return{'patient':cCYvcEg$M$xWzT,'insurance':BsPMjjFyFOgXynlLls$v,'appliedDeductible':Dkqo_crOW$qqa,'maxLeft':Jkjo$ycIC_P,'dedLeft':OkJ$lp};}async function bIKa_N(aottJA_ALXJV){var jo$tdzsryq_FwwmlgGNSfkCsAtV=MDSoiYTSqAdYTKaQu;(!JvGW$foR_l||!PdSVhzW$theEBYmzVNN$wmwNMM)&&await JfzIcqxuONBsNSjbNXB$tHm();var TY_qzWIYap_uIO=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x187),aottJA_ALXJV),bDCcxkvBdq_tCUUwQOK=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15a),aottJA_ALXJV),XYuxBeVBWWkgQr$ad=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x136),aottJA_ALXJV),Q_AyHTH_C=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x161),aottJA_ALXJV),AytF$NsPiDo$clir=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x170),aottJA_ALXJV),NHBPe__aGyLnjoxq=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14b),aottJA_ALXJV),ArwMLN$MpWSxG=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x142),aottJA_ALXJV),rGj$DYMUIy_m=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x177),aottJA_ALXJV),wEjpzVY_GaXaizt=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x189),aottJA_ALXJV),mxNdPjOvhCsAp_A=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x169),aottJA_ALXJV),JuPfQGHM=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x143),aottJA_ALXJV),APsNdCdE_QWLgJXNuTqFLVua=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x176),aottJA_ALXJV),CWrNMXjmSzTiFTkWLtFQTD=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x13a),aottJA_ALXJV),s_VfZqjp=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x185),aottJA_ALXJV),npfP$B$uYhTa=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x148),aottJA_ALXJV);if(!TY_qzWIYap_uIO||!bDCcxkvBdq_tCUUwQOK||!XYuxBeVBWWkgQr$ad||!Q_AyHTH_C||!AytF$NsPiDo$clir)return;var vVrLVCKMTZRKi=DMvJYMzA_IWaTQ(aottJA_ALXJV),tQbwemnfSseiMXYkk=bhHPDL_mXFbO$GuFN(aottJA_ALXJV);if(!vVrLVCKMTZRKi||!tQbwemnfSseiMXYkk)return;var deKVxD_geGG=zJloDiNJV$addpM(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x184),aottJA_ALXJV),xRzt$dXZJIXMui$ov=FWnKOoHubXXGEbm(deKVxD_geGG?deKVxD_geGG[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]:null);if(vVrLVCKMTZRKi!==jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)){var E$llxhIPhHIhZwYy$bYYpPuf=[TY_qzWIYap_uIO,bDCcxkvBdq_tCUUwQOK,XYuxBeVBWWkgQr$ad,Q_AyHTH_C];for(var ae_KijFDPlMkIHNkkjF=0xaaf+0x2b*parseInt(0xc5)+-parseInt(0x2bc6);ae_KijFDPlMkIHNkkjF<E$llxhIPhHIhZwYy$bYYpPuf[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14c)];ae_KijFDPlMkIHNkkjF++){if(!E$llxhIPhHIhZwYy$bYYpPuf[ae_KijFDPlMkIHNkkjF][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15f)]())return;}}else{if(!TY_qzWIYap_uIO[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)])TY_qzWIYap_uIO[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]='0';if(!bDCcxkvBdq_tCUUwQOK[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)])bDCcxkvBdq_tCUUwQOK[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]='0';if(!XYuxBeVBWWkgQr$ad[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)])XYuxBeVBWWkgQr$ad[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]='0';if(!Q_AyHTH_C[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)])Q_AyHTH_C[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]='0';}var hJdptnlxrpLILjcRtmk=vVrLVCKMTZRKi===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)?JvGW$foR_l[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x147)]:JvGW$foR_l[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x138)][vVrLVCKMTZRKi]||{},HOpEcaLZdrKUdYCGStlcBNB=xGIGpWemFmct(hJdptnlxrpLILjcRtmk,tQbwemnfSseiMXYkk,xRzt$dXZJIXMui$ov);if(HOpEcaLZdrKUdYCGStlcBNB==null)HOpEcaLZdrKUdYCGStlcBNB=xGIGpWemFmct(JvGW$foR_l[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x147)],tQbwemnfSseiMXYkk,xRzt$dXZJIXMui$ov);var tFHiCtY_kAb=xGIGpWemFmct(hJdptnlxrpLILjcRtmk,jo$tdzsryq_FwwmlgGNSfkCsAtV(0x13b),xRzt$dXZJIXMui$ov);if(tFHiCtY_kAb==null)tFHiCtY_kAb=xGIGpWemFmct(JvGW$foR_l[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x147)],jo$tdzsryq_FwwmlgGNSfkCsAtV(0x13b),xRzt$dXZJIXMui$ov);var kswATUioGDaiQHtWEqouW=xGIGpWemFmct(hJdptnlxrpLILjcRtmk,jo$tdzsryq_FwwmlgGNSfkCsAtV(0x165),xRzt$dXZJIXMui$ov);if(kswATUioGDaiQHtWEqouW==null)kswATUioGDaiQHtWEqouW=xGIGpWemFmct(JvGW$foR_l[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x147)],jo$tdzsryq_FwwmlgGNSfkCsAtV(0x165),xRzt$dXZJIXMui$ov);var OZoAWjjdqKbEjODyJRMYg=vVrLVCKMTZRKi===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)?0x534+parseFloat(-parseInt(0x7a4))+-0x18*-parseInt(0x1a):WgcIQypgZa$HJU(TY_qzWIYap_uIO),fndsfo=vVrLVCKMTZRKi===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)?-0x5*Math.ceil(-0x12a)+-0x13b*parseInt(0x12)+-parseInt(0x2)*Math.max(-parseInt(0x82a),-parseInt(0x82a)):WgcIQypgZa$HJU(bDCcxkvBdq_tCUUwQOK);if(isNaN(OZoAWjjdqKbEjODyJRMYg)||isNaN(fndsfo)){alert(jo$tdzsryq_FwwmlgGNSfkCsAtV(0x167));return;}var q_emHWtGaKnEHqnQGxFHherS=vVrLVCKMTZRKi===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)?0x395+parseInt(parseInt(0x1f41))+-0x2ae*0xd:PdSVhzW$theEBYmzVNN$wmwNMM[vVrLVCKMTZRKi]?PdSVhzW$theEBYmzVNN$wmwNMM[vVrLVCKMTZRKi][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x13b)]:-0x1*-parseInt(0x26)+parseInt(0x4)*Math.max(0x50b,parseInt(0x50b))+0x6c6*-0x3,hXuwnfiDxrNq=vVrLVCKMTZRKi===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)?parseInt(0x1)*Math.max(-0x1975,-0x1975)+parseInt(0x2657)+parseInt(-parseInt(0xce2)):Math[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x164)](-parseInt(0x1)*0x87d+Math.ceil(-parseInt(0xf59))+0x12*Math.ceil(0x153),parseFloat(XYuxBeVBWWkgQr$ad[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]||'0')),VYIWJnw_ouGfYPpnVej=vVrLVCKMTZRKi===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x171)?-0xe91+-0x1e*0x12f+Math.ceil(0x3)*0x10b1:Math[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x164)](parseInt(-0x1c31)*Math.max(0x1,0x1)+parseInt(0x8d9)+Math.ceil(parseInt(0x1358)),parseFloat(Q_AyHTH_C[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x15e)]||'0'));if(tQbwemnfSseiMXYkk===jo$tdzsryq_FwwmlgGNSfkCsAtV(0x165)){var P_fAAocRkwFQ$dBOBt=sLvSs(kswATUioGDaiQHtWEqouW,fndsfo,hXuwnfiDxrNq,VYIWJnw_ouGfYPpnVej,![]),JG_UsttvYYnlYoL$nmtRfvGGq=sLvSs(tFHiCtY_kAb,q_emHWtGaKnEHqnQGxFHherS,P_fAAocRkwFQ$dBOBt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x160)],P_fAAocRkwFQ$dBOBt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x163)],![]),rcuL$HFKNVCKYDBRhpezmhCXv$E=s_VfZqjp?s_VfZqjp[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14e)]:null,Q_XJdSnIgRV_bmFHuHVZsvhj=npfP$B$uYhTa?npfP$B$uYhTa[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14e)]:null;if(ArwMLN$MpWSxG)ArwMLN$MpWSxG[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(kswATUioGDaiQHtWEqouW);if(rGj$DYMUIy_m)rGj$DYMUIy_m[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(-parseInt(0x5a4)*-0x1+-parseInt(0xa07)*Math.max(-0x1,-parseInt(0x1))+Number(-parseInt(0xfab)));if(wEjpzVY_GaXaizt)wEjpzVY_GaXaizt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=(fndsfo*(-parseInt(0x10b)*Number(0xa)+0x16f*parseInt(parseInt(0xb))+Math.trunc(-0x7)*Math.trunc(0xb5)))[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x139)](parseInt(parseInt(0x1223))+-parseInt(0x1f)*-parseInt(0xd5)+-0x2bee)+'%';if(mxNdPjOvhCsAp_A)mxNdPjOvhCsAp_A[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(P_fAAocRkwFQ$dBOBt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x174)]+JG_UsttvYYnlYoL$nmtRfvGGq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x174)]);if(JuPfQGHM)JuPfQGHM[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(JG_UsttvYYnlYoL$nmtRfvGGq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x160)]);if(NHBPe__aGyLnjoxq)NHBPe__aGyLnjoxq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(P_fAAocRkwFQ$dBOBt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]+JG_UsttvYYnlYoL$nmtRfvGGq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);if(APsNdCdE_QWLgJXNuTqFLVua)APsNdCdE_QWLgJXNuTqFLVua[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(JG_UsttvYYnlYoL$nmtRfvGGq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);if(CWrNMXjmSzTiFTkWLtFQTD)CWrNMXjmSzTiFTkWLtFQTD[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(P_fAAocRkwFQ$dBOBt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);if(s_VfZqjp)s_VfZqjp[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(Math.max(-parseInt(0x2),-parseInt(0x2))*-parseInt(0x4f2)+-0x264b*Math.floor(parseInt(0x1))+0x1c67);if(npfP$B$uYhTa)npfP$B$uYhTa[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(P_fAAocRkwFQ$dBOBt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]+JG_UsttvYYnlYoL$nmtRfvGGq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);if(rcuL$HFKNVCKYDBRhpezmhCXv$E)rcuL$HFKNVCKYDBRhpezmhCXv$E[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x18f)][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x149)]=jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17e);if(Q_XJdSnIgRV_bmFHuHVZsvhj){var W_UV_doN=Q_XJdSnIgRV_bmFHuHVZsvhj[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)];W_UV_doN&&W_UV_doN[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x162)]===-parseInt(0x1a01)+parseInt(0x39)*parseInt(-0x4f)+parseInt(0x2b9b)&&(W_UV_doN[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x168)]=jo$tdzsryq_FwwmlgGNSfkCsAtV(0x16c));}l$lXGXeiHzQAQtZ_ho(AytF$NsPiDo$clir);return;}var aUmGhjFkWZNVR=hXuwnfiDxrNq,z$Yek$a=VYIWJnw_ouGfYPpnVej,Lq$udZ$NQyuKDWjDcQF=sLvSs(HOpEcaLZdrKUdYCGStlcBNB,OZoAWjjdqKbEjODyJRMYg,aUmGhjFkWZNVR,z$Yek$a,!![]);aUmGhjFkWZNVR=Lq$udZ$NQyuKDWjDcQF[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x160)],z$Yek$a=Lq$udZ$NQyuKDWjDcQF[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x163)];var nXsJW$_BEsv=sLvSs(tFHiCtY_kAb,q_emHWtGaKnEHqnQGxFHherS,aUmGhjFkWZNVR,z$Yek$a,![]);aUmGhjFkWZNVR=nXsJW$_BEsv[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x160)];var rtvp$hFmZxkrtyx$Hh=sLvSs(kswATUioGDaiQHtWEqouW,fndsfo,hXuwnfiDxrNq,VYIWJnw_ouGfYPpnVej,![]),C$pZLYjJMN=Lq$udZ$NQyuKDWjDcQF[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]+nXsJW$_BEsv[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)],EmM$PpESBjCPepVdyML=C$pZLYjJMN+rtvp$hFmZxkrtyx$Hh[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)];if(ArwMLN$MpWSxG)ArwMLN$MpWSxG[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(HOpEcaLZdrKUdYCGStlcBNB);if(rGj$DYMUIy_m)rGj$DYMUIy_m[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(Lq$udZ$NQyuKDWjDcQF[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14d)]);if(wEjpzVY_GaXaizt)wEjpzVY_GaXaizt[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=(OZoAWjjdqKbEjODyJRMYg*(-parseInt(0x145)*0x5+0x153+parseInt(0x56a)))[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x139)](parseInt(0x261e)+parseInt(0x1e4b)+0x4469*-0x1)+'%';if(mxNdPjOvhCsAp_A)mxNdPjOvhCsAp_A[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(Lq$udZ$NQyuKDWjDcQF[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x174)]);if(JuPfQGHM)JuPfQGHM[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(aUmGhjFkWZNVR);if(APsNdCdE_QWLgJXNuTqFLVua)APsNdCdE_QWLgJXNuTqFLVua[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(nXsJW$_BEsv[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);if(CWrNMXjmSzTiFTkWLtFQTD)CWrNMXjmSzTiFTkWLtFQTD[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(rtvp$hFmZxkrtyx$Hh[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);if(NHBPe__aGyLnjoxq)NHBPe__aGyLnjoxq[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(C$pZLYjJMN);var rcuL$HFKNVCKYDBRhpezmhCXv$E=s_VfZqjp?s_VfZqjp[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14e)]:null,Q_XJdSnIgRV_bmFHuHVZsvhj=npfP$B$uYhTa?npfP$B$uYhTa[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x14e)]:null;if(rcuL$HFKNVCKYDBRhpezmhCXv$E)rcuL$HFKNVCKYDBRhpezmhCXv$E[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x18f)][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x149)]='';if(s_VfZqjp)s_VfZqjp[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(Lq$udZ$NQyuKDWjDcQF[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x152)]);rcuL$HFKNVCKYDBRhpezmhCXv$E&&rcuL$HFKNVCKYDBRhpezmhCXv$E[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)]&&rcuL$HFKNVCKYDBRhpezmhCXv$E[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x162)]===Math.floor(parseInt(0x69))*parseInt(0x22)+-parseInt(0x5b1)+-0x41f*parseInt(0x2)&&(rcuL$HFKNVCKYDBRhpezmhCXv$E[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x168)]=jo$tdzsryq_FwwmlgGNSfkCsAtV(0x145));if(npfP$B$uYhTa)npfP$B$uYhTa[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x153)]=xMkXTpRTkxtILHO_QGW(EmM$PpESBjCPepVdyML);Q_XJdSnIgRV_bmFHuHVZsvhj&&Q_XJdSnIgRV_bmFHuHVZsvhj[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)]&&Q_XJdSnIgRV_bmFHuHVZsvhj[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x162)]===parseInt(0x1bce)*parseInt(0x1)+parseInt(0x1)*Math.ceil(-parseInt(0x1414))+Math.max(-0x4f,-0x4f)*0x19&&(Q_XJdSnIgRV_bmFHuHVZsvhj[jo$tdzsryq_FwwmlgGNSfkCsAtV(0x17f)][jo$tdzsryq_FwwmlgGNSfkCsAtV(0x168)]=jo$tdzsryq_FwwmlgGNSfkCsAtV(0x18a)),l$lXGXeiHzQAQtZ_ho(AytF$NsPiDo$clir);}function hbUNmQJahrq_cmbGIC(o$Fmgd){var wBpKWapVFiNrYFnrGMaU=MDSoiYTSqAdYTKaQu,endLhX$IAbvn_TZl=zJloDiNJV$addpM(wBpKWapVFiNrYFnrGMaU(0x187),o$Fmgd),jYFzGLnkXzvap$_Ptp=zJloDiNJV$addpM(wBpKWapVFiNrYFnrGMaU(0x15a),o$Fmgd),mJXtTEmp=zJloDiNJV$addpM(wBpKWapVFiNrYFnrGMaU(0x136),o$Fmgd),zK_cOZB=zJloDiNJV$addpM(wBpKWapVFiNrYFnrGMaU(0x161),o$Fmgd),ETlLAGnLCDOHiXVdzKbI=zJloDiNJV$addpM(wBpKWapVFiNrYFnrGMaU(0x170),o$Fmgd);if(endLhX$IAbvn_TZl)endLhX$IAbvn_TZl[wBpKWapVFiNrYFnrGMaU(0x15e)]='';if(jYFzGLnkXzvap$_Ptp)jYFzGLnkXzvap$_Ptp[wBpKWapVFiNrYFnrGMaU(0x15e)]='';if(mJXtTEmp)mJXtTEmp[wBpKWapVFiNrYFnrGMaU(0x15e)]='';if(zK_cOZB)zK_cOZB[wBpKWapVFiNrYFnrGMaU(0x15e)]='';ETlLAGnLCDOHiXVdzKbI&&(ETlLAGnLCDOHiXVdzKbI[wBpKWapVFiNrYFnrGMaU(0x159)]=!![],ETlLAGnLCDOHiXVdzKbI[wBpKWapVFiNrYFnrGMaU(0x18f)][wBpKWapVFiNrYFnrGMaU(0x149)]=wBpKWapVFiNrYFnrGMaU(0x17e));}document[ZumiyoEoFbiYfy_mlGbhxgVIn(0x14a)](ZumiyoEoFbiYfy_mlGbhxgVIn(0x16e),async function(ygM$RlLe$s){var BT_Ob_TP=ZumiyoEoFbiYfy_mlGbhxgVIn,VOzRnDNRXe=ygM$RlLe$s[BT_Ob_TP(0x16b)];if(!VOzRnDNRXe)return;if(VOzRnDNRXe['id']===BT_Ob_TP(0x13f))ygM$RlLe$s[BT_Ob_TP(0x16d)](),await JfzIcqxuONBsNSjbNXB$tHm(),bIKa_N(slzyJSoYjleVUrRzuxSYT());else{if(VOzRnDNRXe['id']===BT_Ob_TP(0x13c))ygM$RlLe$s[BT_Ob_TP(0x16d)](),hbUNmQJahrq_cmbGIC(slzyJSoYjleVUrRzuxSYT());else VOzRnDNRXe['id']===BT_Ob_TP(0x190)&&(ygM$RlLe$s[BT_Ob_TP(0x16d)](),window[BT_Ob_TP(0x166)]());}}),document[ZumiyoEoFbiYfy_mlGbhxgVIn(0x14a)](ZumiyoEoFbiYfy_mlGbhxgVIn(0x150),function(QzLunx){var wUFExFECQjukTI$tSRPna_AVAx=ZumiyoEoFbiYfy_mlGbhxgVIn,vjSYljPurgBOVspfgiqPb=QzLunx[wUFExFECQjukTI$tSRPna_AVAx(0x16b)];if(!vjSYljPurgBOVspfgiqPb||vjSYljPurgBOVspfgiqPb[wUFExFECQjukTI$tSRPna_AVAx(0x140)]!==wUFExFECQjukTI$tSRPna_AVAx(0x16f))return;var psnQEaIo$AqcMyrlsOZ=slzyJSoYjleVUrRzuxSYT();if(!psnQEaIo$AqcMyrlsOZ)return;var FDQrKb=String(vjSYljPurgBOVspfgiqPb[wUFExFECQjukTI$tSRPna_AVAx(0x15e)])[wUFExFECQjukTI$tSRPna_AVAx(0x14f)](),tFy$ntlWk=zJloDiNJV$addpM(wUFExFECQjukTI$tSRPna_AVAx(0x187),psnQEaIo$AqcMyrlsOZ),SZgIXlB$_HY=zJloDiNJV$addpM(wUFExFECQjukTI$tSRPna_AVAx(0x15a),psnQEaIo$AqcMyrlsOZ),cMPjSX$VUz$oWMWgeHYQ=zJloDiNJV$addpM(wUFExFECQjukTI$tSRPna_AVAx(0x136),psnQEaIo$AqcMyrlsOZ),X_tcxGqPkp_rYStJoIQfLtBWI=zJloDiNJV$addpM(wUFExFECQjukTI$tSRPna_AVAx(0x161),psnQEaIo$AqcMyrlsOZ);if(!tFy$ntlWk||!SZgIXlB$_HY||!cMPjSX$VUz$oWMWgeHYQ||!X_tcxGqPkp_rYStJoIQfLtBWI)return;if(FDQrKb===wUFExFECQjukTI$tSRPna_AVAx(0x171))tFy$ntlWk[wUFExFECQjukTI$tSRPna_AVAx(0x15e)]='0',SZgIXlB$_HY[wUFExFECQjukTI$tSRPna_AVAx(0x15e)]='0',cMPjSX$VUz$oWMWgeHYQ[wUFExFECQjukTI$tSRPna_AVAx(0x15e)]='0',X_tcxGqPkp_rYStJoIQfLtBWI[wUFExFECQjukTI$tSRPna_AVAx(0x15e)]='0';else{if(!tFy$ntlWk[wUFExFECQjukTI$tSRPna_AVAx(0x15e)])tFy$ntlWk[wUFExFECQjukTI$tSRPna_AVAx(0x15e)]='';if(!SZgIXlB$_HY[wUFExFECQjukTI$tSRPna_AVAx(0x15e)])SZgIXlB$_HY[wUFExFECQjukTI$tSRPna_AVAx(0x15e)]='';gHsAB_vUT_RqCvHOgV(psnQEaIo$AqcMyrlsOZ);}}),document[ZumiyoEoFbiYfy_mlGbhxgVIn(0x156)]!==ZumiyoEoFbiYfy_mlGbhxgVIn(0x179)?((async()=>{await JfzIcqxuONBsNSjbNXB$tHm();var hiAfooKtmTM=slzyJSoYjleVUrRzuxSYT();if(hiAfooKtmTM)gHsAB_vUT_RqCvHOgV(hiAfooKtmTM);})()):document[ZumiyoEoFbiYfy_mlGbhxgVIn(0x14a)](ZumiyoEoFbiYfy_mlGbhxgVIn(0x17d),async function(){await JfzIcqxuONBsNSjbNXB$tHm();var GWXmTMJZnJXrMWKNcvGQjZQJ=slzyJSoYjleVUrRzuxSYT();if(GWXmTMJZnJXrMWKNcvGQjZQJ)gHsAB_vUT_RqCvHOgV(GWXmTMJZnJXrMWKNcvGQjZQJ);},{'once':!![]});}()));
+// assets/js/pricing-calculator.js
+(function () {
+  // ---- external data holders ----
+  let FEES_JSON = null;            // { currency, cash:{...}, insurers:{...} }
+  let COVERAGE_DEFAULTS = null;    // { insurerKey: { endo, diag, cbct } }
+
+  // GentleWave fee for RETX only — never covered by insurance
+  const GENTLEWAVE_RETX_PATIENT_FEE = 150;
+
+  async function loadPricing() {
+    if (FEES_JSON && COVERAGE_DEFAULTS) return;
+    const [fees, cov] = await Promise.all([
+      fetch('/assets/data/fees.json', { cache: 'no-cache' }).then(r => r.json()),
+      fetch('/assets/data/coverage-defaults.json', { cache: 'no-cache' }).then(r => r.json())
+    ]);
+    FEES_JSON = fees;
+    COVERAGE_DEFAULTS = cov;
+  }
+
+  // --- helpers (unchanged) ---
+  function $(sel, root) { return (root || document).querySelector(sel); }
+  function root() { return document.getElementById('insurance-calculator'); }
+  function fmt(n) { return Number(n).toLocaleString('en-US', { style: 'currency', currency: 'USD' }); }
+  function clamp(n, a, b) { return Math.min(Math.max(n, a), b); }
+  function readPct(el) {
+    var raw = parseFloat(el.value);
+    if (isNaN(raw)) return NaN;
+    var val = raw > 1 ? raw / 100 : raw;
+    return clamp(val, 0, 1);
+  }
+  function getInsurer(r) { var c = $('input[name="insurer"]:checked', r); return c ? String(c.value).toLowerCase() : ''; }
+  function getProcedure(r) { var c = $('input[name="procedure"]:checked', r); return c ? String(c.value) : ''; }
+
+  // Map ADA tooth numbers (1–32) into categories
+  function mapToothCategory(num) {
+    var n = parseInt(num, 10);
+    if (isNaN(n) || n < 1 || n > 32) return 'anterior';
+    if ((n >= 6 && n <= 11) || (n >= 22 && n <= 27)) return 'anterior';
+    if ((n >= 4 && n <= 5) || (n >= 12 && n <= 13) || (n >= 20 && n <= 21) || (n >= 28 && n <= 29)) return 'bicuspid';
+    return 'molar';
+  }
+
+  // Resolve a fee given table + procedure + tooth category
+  function feeFor(table, proc, toothCat) {
+    if (!table) return null;
+    var v = table[proc];
+    if (v == null) return null;
+    if (typeof v === 'number') return v;
+    if (typeof v === 'object') {
+      if (v[toothCat] != null) return v[toothCat];
+      return (v.anterior ?? v.bicuspid ?? v.molar ?? null);
+    }
+    return null;
+  }
+
+  function prefillCoverage(r) {
+    var d = COVERAGE_DEFAULTS ? COVERAGE_DEFAULTS[getInsurer(r)] : null;
+    var endo = $('#endoCov', r), diag = $('#diagCov', r);
+    if (!d || !endo || !diag) return;
+    if (!endo.value) endo.value = (d.endo * 100).toFixed(0);
+    if (!diag.value) diag.value = (d.diag * 100).toFixed(0);
+  }
+
+  function reveal(out) {
+    if (!out) return;
+    out.hidden = false;
+    out.removeAttribute('hidden');
+    out.style.display = 'block';
+  }
+
+  function estimateLineItem(fee, covPct, maxRemain, dedRemain, deductibleApplies) {
+    var applied = 0;
+    if (deductibleApplies && covPct > 0) {
+      applied = Math.min(Math.max(0, dedRemain), fee);
+    }
+    var eligible = Math.max(0, fee - applied);
+    var insBeforeMax = eligible * covPct;
+    var insPays = Math.min(insBeforeMax, Math.max(0, maxRemain));
+    var patient = Math.max(0, fee - insPays);
+    var maxLeft = Math.max(0, maxRemain - insPays);
+    var dedLeft = Math.max(0, dedRemain - applied);
+    return { patient: patient, insurance: insPays, appliedDeductible: applied, maxLeft: maxLeft, dedLeft: dedLeft };
+  }
+
+  async function calculate(r) {
+    // ensure data is ready
+    if (!FEES_JSON || !COVERAGE_DEFAULTS) { await loadPricing(); }
+
+    var endo = $('#endoCov', r), diag = $('#diagCov', r), max = $('#maxRemain', r), ded = $('#deductRemain', r);
+    var box = $('#calc2-result', r),
+        p = $('#calc2-patient', r), fee = $('#calc2-fee', r),
+        dd = $('#calc2-deduct', r), cov = $('#calc2-cov', r), ins = $('#calc2-ins', r), left = $('#calc2-maxleft', r);
+
+    var outCbct = $('#calc2-cbct', r),
+        outEval = $('#calc2-evalcopay', r),
+        outTotalTreat = $('#calc2-total-treatment', r),
+        outTotalAll = $('#calc2-total-all', r);
+
+    if (!endo || !diag || !max || !ded || !box) return;
+
+    var insr = getInsurer(r), proc = getProcedure(r);
+    if (!insr || !proc) return;
+
+    var toothInput = $('#toothNum', r);
+    var toothCat = mapToothCategory(toothInput ? toothInput.value : null);
+
+    if (insr !== 'noins') {
+      var need = [endo, diag, max, ded];
+      for (var i = 0; i < need.length; i++) { if (!need[i].reportValidity()) return; }
+    } else {
+      if (!endo.value) endo.value = '0';
+      if (!diag.value) diag.value = '0';
+      if (!max.value) max.value = '0';
+      if (!ded.value) ded.value = '0';
+    }
+
+    var fees = (insr === 'noins') ? FEES_JSON.cash : (FEES_JSON.insurers[insr] || {});
+    var base = feeFor(fees, proc, toothCat);
+    if (base == null) base = feeFor(FEES_JSON.cash, proc, toothCat);
+    var cbctFee = feeFor(fees, 'cbct', toothCat); if (cbctFee == null) cbctFee = feeFor(FEES_JSON.cash, 'cbct', toothCat);
+    var evalFee = feeFor(fees, 'evaluation', toothCat); if (evalFee == null) evalFee = feeFor(FEES_JSON.cash, 'evaluation', toothCat);
+
+    var endoPct = (insr === 'noins') ? 0 : readPct(endo);
+    var diagPct = (insr === 'noins') ? 0 : readPct(diag);
+    if (isNaN(endoPct) || isNaN(diagPct)) { alert('Enter valid coverage percentages.'); return; }
+    var cbctPct = (insr === 'noins') ? 0 : (COVERAGE_DEFAULTS[insr] ? COVERAGE_DEFAULTS[insr].cbct : 0.0);
+
+    var maxStart = (insr === 'noins') ? 0 : Math.max(0, parseFloat(max.value || '0'));
+    var dedStart = (insr === 'noins') ? 0 : Math.max(0, parseFloat(ded.value || '0'));
+
+    if (proc === 'evaluation') {
+      var evalRes = estimateLineItem(evalFee, diagPct, maxStart, dedStart, false);
+      var cbctRes = estimateLineItem(cbctFee, cbctPct, evalRes.maxLeft, evalRes.dedLeft, false);
+
+      var treatTotalRow = outTotalTreat ? outTotalTreat.parentElement : null;
+      var allTotalRow = outTotalAll ? outTotalAll.parentElement : null;
+
+      if (fee) fee.textContent = fmt(evalFee);
+      if (dd) dd.textContent = fmt(0);
+      if (cov) cov.textContent = (diagPct * 100).toFixed(0) + '%';
+      if (ins) ins.textContent = fmt(evalRes.insurance + cbctRes.insurance);
+      if (left) left.textContent = fmt(cbctRes.maxLeft);
+      if (p) p.textContent = fmt(evalRes.patient + cbctRes.patient);
+
+      if (outCbct) outCbct.textContent = fmt(cbctRes.patient);
+      if (outEval) outEval.textContent = fmt(evalRes.patient);
+      if (outTotalTreat) outTotalTreat.textContent = fmt(0);
+      if (outTotalAll) outTotalAll.textContent = fmt(evalRes.patient + cbctRes.patient);
+
+      if (treatTotalRow) treatTotalRow.style.display = 'none';
+      if (allTotalRow) {
+        var n = allTotalRow.firstChild;
+        if (n && n.nodeType === 3) { n.nodeValue = 'Evaluation total (incl. CBCT): '; }
+      }
+
+      reveal(box);
+      return;
+    }
+
+    // Treatment visit (Treatment + CBCT + Evaluation)
+    var maxRemain = maxStart, dedRemain = dedStart;
+
+    var procRes = estimateLineItem(base, endoPct, maxRemain, dedRemain, true);
+    maxRemain = procRes.maxLeft; dedRemain = procRes.dedLeft;
+
+    var cbctRes2 = estimateLineItem(cbctFee, cbctPct, maxRemain, dedRemain, false);
+    maxRemain = cbctRes2.maxLeft;
+
+    var evalRes2 = estimateLineItem(evalFee, diagPct, maxStart, dedStart, false);
+
+    // --- GentleWave add-on for RETX ONLY (patient-only, no coverage) ---
+    // We add this AFTER all coverage math so it never affects insurance/limits.
+    var retxAddOn = (proc === 'retx') ? GENTLEWAVE_RETX_PATIENT_FEE : 0;
+
+    var treatmentPatient = procRes.patient + cbctRes2.patient + retxAddOn; // add-on belongs with treatment portion
+    var treatmentPlusEval = treatmentPatient + evalRes2.patient;
+
+    // Display (keep fee/deduct/coverage/ins/max-left based on covered items only)
+    if (fee) fee.textContent = fmt(base);
+    if (dd) dd.textContent = fmt(procRes.appliedDeductible);
+    if (cov) cov.textContent = (endoPct * 100).toFixed(0) + '%';
+    if (ins) ins.textContent = fmt(procRes.insurance);
+    if (left) left.textContent = fmt(maxRemain);
+    if (outCbct) outCbct.textContent = fmt(cbctRes2.patient);
+    if (outEval) outEval.textContent = fmt(evalRes2.patient);
+
+    if (p) p.textContent = fmt(treatmentPatient);
+
+    var treatTotalRow = outTotalTreat ? outTotalTreat.parentElement : null;
+    var allTotalRow = outTotalAll ? outTotalAll.parentElement : null;
+
+    if (treatTotalRow) treatTotalRow.style.display = '';
+    // For transparency, include the add-on in the “procedure only” line too.
+    if (outTotalTreat) outTotalTreat.textContent = fmt(procRes.patient + retxAddOn);
+    if (treatTotalRow && treatTotalRow.firstChild && treatTotalRow.firstChild.nodeType === 3) {
+      treatTotalRow.firstChild.nodeValue = 'Procedure only (no CBCT/Eval): ';
+    }
+
+    if (outTotalAll) outTotalAll.textContent = fmt(treatmentPlusEval);
+    if (allTotalRow && allTotalRow.firstChild && allTotalRow.firstChild.nodeType === 3) {
+      allTotalRow.firstChild.nodeValue = 'Total for today’s visit: ';
+    }
+
+    reveal(box);
+  }
+
+  function resetCalc(r) {
+    var endo = $('#endoCov', r), diag = $('#diagCov', r), max = $('#maxRemain', r), ded = $('#deductRemain', r), box = $('#calc2-result', r);
+    if (endo) endo.value = ''; if (diag) diag.value = ''; if (max) max.value = ''; if (ded) ded.value = '';
+    if (box) { box.hidden = true; box.style.display = 'none'; }
+  }
+
+  document.addEventListener('click', async function (e) {
+    var t = e.target;
+    if (!t) return;
+
+    if (t.id === 'calc2-btn') {
+      e.preventDefault();
+      await loadPricing();
+      calculate(root());
+    }
+    else if (t.id === 'calc2-reset') {
+      e.preventDefault();
+      resetCalc(root());
+    }
+    else if (t.id === 'calc2-print') {
+      e.preventDefault();
+      window.print();
+    }
+  });
+
+  document.addEventListener('change', function (e) {
+    var t = e.target; if (!t || t.name !== 'insurer') return;
+    var r = root(); if (!r) return;
+    var val = String(t.value).toLowerCase();
+
+    var endo = $('#endoCov', r), diag = $('#diagCov', r), max = $('#maxRemain', r), ded = $('#deductRemain', r);
+    if (!endo || !diag || !max || !ded) return;
+
+    if (val === 'noins') {
+      endo.value = '0'; diag.value = '0'; max.value = '0'; ded.value = '0';
+    } else {
+      if (!endo.value) endo.value = '';
+      if (!diag.value) diag.value = '';
+      prefillCoverage(r);
+    }
+  });
+
+  // Prefill once the page & pricing load
+  if (document.readyState !== 'loading') {
+    (async () => { await loadPricing(); var r0 = root(); if (r0) prefillCoverage(r0); })();
+  } else {
+    document.addEventListener('DOMContentLoaded', async function () {
+      await loadPricing();
+      var r0 = root(); if (r0) prefillCoverage(r0);
+    }, { once: true });
+  }
+})();

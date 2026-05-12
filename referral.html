@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patient Referral Form</title>
+    <link rel="stylesheet" href="referral-form.css">
+    <style>
+        :root {
+            --bg: #0b1220;
+            --panel: #0e172a;
+            --muted: #94a3b8;
+            --text: #e2e8f0;
+            --primary: #4f46e5;
+            --accent: #06b6d4;
+            --ok: #22c55e;
+            --warn: #f59e0b;
+            --danger: #ef4444;
+            --chip: #1f2937;
+            --radius: 18px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, .35)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+            color: var(--text);
+            background: radial-gradient(1200px 800px at 10% -10%, rgba(79, 70, 229, .20), transparent 40%),
+                radial-gradient(1200px 800px at 90% 10%, rgba(6, 182, 212, .14), transparent 40%), var(--bg);
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 18px
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: conic-gradient(from 0deg, var(--primary), var(--accent), var(--primary));
+            box-shadow: var(--shadow)
+        }
+
+        .brand {
+            font-weight: 700
+        }
+
+        .sub {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid rgba(148, 163, 184, .2);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden
+        }
+
+        .card .inner {
+            padding: 22px 22px 6px
+        }
+
+        .stepper {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            padding: 14px;
+            background: rgba(15, 23, 42, .6);
+            border-bottom: 1px solid rgba(148, 163, 184, .18)
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(148, 163, 184, .18)
+        }
+
+        .step .num {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(148, 163, 184, .35);
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .step.active {
+            border-color: rgba(99, 102, 241, .6);
+            background: linear-gradient(180deg, rgba(99, 102, 241, .12), rgba(99, 102, 241, .06))
+        }
+
+        .step.active .num {
+            background: var(--primary);
+            border-color: transparent;
+            color: #fff
+        }
+
+        .step.done .num {
+            background: var(--ok);
+            color: #062;
+            border-color: transparent
+        }
+
+        .step .label {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        form {
+            display: block
+        }
+
+        fieldset {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            display: none
+        }
+
+        fieldset.active {
+            display: block
+        }
+
+        .grid {
+            display: grid;
+            gap: 14px
+        }
+
+        .g-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        .g-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr))
+        }
+
+        @media (max-width:920px) {
+
+            .g-2,
+            .g-3 {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .input label {
+            display: block;
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 6px
+        }
+
+        .required:after {
+            content: " *";
+            color: #fca5a5
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, .3);
+            background: rgba(2, 6, 23, .35);
+            color: var(--text);
+            outline: none
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--primary)
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        .hint {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .error {
+            color: #fecaca;
+            font-size: 13px;
+            display: none
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 14px;
+            border-top: 1px solid rgba(148, 163, 184, .18);
+            background: rgba(2, 6, 23, .35)
+        }
+
+        .btn {
+            appearance: none;
+            border: 0;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #fff;
+            background: var(--primary);
+            cursor: pointer
+        }
+
+        .btn.secondary {
+            background: rgba(148, 163, 184, .15);
+            color: var(--text)
+        }
+
+        .btn:disabled {
+            opacity: .5;
+            cursor: not-allowed
+        }
+
+        .chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .chip {
+            border: 1px solid rgba(148, 163, 184, .25);
+            background: var(--chip);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            cursor: pointer;
+            user-select: none
+        }
+
+        .chip.active {
+            background: rgba(99, 102, 241, .2);
+            border-color: rgba(99, 102, 241, .6)
+        }
+
+        .consent {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, .2);
+            background: rgba(255, 255, 255, .02)
+        }
+
+        .upload-box {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(6, 182, 212, .35);
+            background: rgba(6, 182, 212, .08)
+        }
+
+        .upload-list {
+            margin-top: 10px;
+            display: grid;
+            gap: 6px;
+            font-size: 13px;
+            color: #dbeafe
+        }
+
+        .upload-list div {
+            overflow-wrap: anywhere
+        }
+
+        .success-dialog {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            display: grid;
+            place-items: center;
+            padding: 20px;
+            background: rgba(2, 6, 23, .78)
+        }
+
+        .success-dialog[hidden] {
+            display: none
+        }
+
+        .success-card {
+            width: min(620px, 100%);
+            padding: 28px;
+            border-radius: 18px;
+            border: 2px solid rgba(34, 197, 94, .85);
+            background: #0f172a;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, .55);
+            text-align: center
+        }
+
+        .success-card h2 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 7vw, 4rem);
+            line-height: 1;
+            color: #dcfce7
+        }
+
+        .success-card p {
+            margin: 0 0 18px;
+            color: #dbeafe
+        }
+
+        .tooth-grid {
+            display: grid;
+            grid-template-columns: repeat(16, minmax(0, 1fr));
+            gap: 8px
+        }
+
+        .tooth {
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid rgba(148, 163, 184, .25);
+            border-radius: 12px;
+            padding: 10px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px
+        }
+
+        .tooth .n {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .pick {
+            width: 28px;
+            height: 28px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, .35);
+            background: rgba(2, 6, 23, .45);
+            color: var(--text);
+            cursor: pointer;
+            position: relative;
+            outline: none
+        }
+
+        .pick.active {
+            border-color: rgba(99, 102, 241, .7);
+            background: rgba(99, 102, 241, .18);
+            box-shadow: 0 0 0 1px rgba(99, 102, 241, .25) inset
+        }
+
+        .pick.active::after {
+            content: "✓";
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            font-size: 14px
+        }
+
+        .review {
+            padding: 10px;
+            border: 1px solid rgba(148, 163, 184, .2);
+            border-radius: 12px
+        }
+
+        .kv {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(148, 163, 184, .2)
+        }
+
+        .kv:last-child {
+            border-bottom: 0
+        }
+
+        .toast {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            padding: 12px 14px;
+            background: rgba(6, 182, 212, .12);
+            border: 1px solid rgba(6, 182, 212, .5);
+            color: #cffafe;
+            border-radius: 10px;
+            display: none
+        }
+
+        footer {
+            margin: 18px 0;
+            color: var(--muted);
+            font-size: 12px;
+            text-align: center
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            background: #ffffff;
+            color: #000000;
+            padding: 0.75rem 1rem;
+            z-index: 9999;
+            border: 2px solid #000000;
+            border-radius: 8px;
+        }
+
+        .skip-link:focus {
+            left: 1rem;
+            top: 1rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .brand {
+            margin: 0;
+            font-size: 1.25rem;
+            line-height: 1.2;
+        }
+
+        .top-nav {
+            margin-left: auto;
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .top-nav a {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+        }
+
+        .top-nav a:focus-visible,
+        .chip:focus-visible,
+        .pick:focus-visible,
+        .btn:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 3px;
+        }
+
+        button.chip {
+            font-family: inherit;
+            color: var(--text);
+        }
+
+        main {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="wrap">
+        <header>
+            <div class="logo" aria-hidden="true"></div>
+            <div>
+                <h1 class="brand">Patient Referral</h1>
+                <div class="sub">McMurtrey Endodontics Referral Form</div>
+            </div>
+            <nav class="top-nav" aria-label="Site navigation">
+                <a href="index.html">Home</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <main id="main-content">
+        <div class="card">
+            <div class="stepper" id="stepper" role="list" aria-label="Referral form progress">
+                <div class="step active" data-step="1" role="listitem" aria-current="step">
+                    <div class="num">1</div>
+                    <div class="label">Patient</div>
+                </div>
+                <div class="step" data-step="2" role="listitem">
+                    <div class="num">2</div>
+                    <div class="label">Insurance</div>
+                </div>
+                <div class="step" data-step="3" role="listitem">
+                    <div class="num">3</div>
+                    <div class="label">Referral Details</div>
+                </div>
+                <div class="step" data-step="4" role="listitem">
+                    <div class="num">4</div>
+                    <div class="label">Tooth Selection</div>
+                </div>
+                <div class="step" data-step="5" role="listitem">
+                    <div class="num">5</div>
+                    <div class="label">Review & Submit</div>
+                </div>
+            </div>
+
+            <div class="inner">
+                <form id="refForm" aria-label="Patient referral form" novalidate>
+                    <!-- STEP 1 -->
+                    <fieldset data-step="1" class="active" aria-labelledby="s1h">
+                        <legend class="sr-only">Patient Information</legend>
+                        <h2 id="s1h">Patient Information</h2>
+                        <div class="grid g-3">
+                            <div class="input"><label class="required" for="firstName">First name</label><input
+                                    id="firstName" name="firstName" type="text" required aria-required="true" autocomplete="given-name"></div>
+                            <div class="input"><label class="required" for="lastName">Last name</label><input
+                                    id="lastName" name="lastName" type="text" required aria-required="true" autocomplete="family-name"></div>
+                            <div class="input"><label class="required" for="dob">Date of birth</label><input id="dob"
+                                    name="dob" type="date" required aria-required="true"></div>
+                        </div>
+                        <div class="grid g-3">
+                            <div class="input"><label for="phone" class="required">Mobile phone</label><input id="phone"
+                                    name="phone" type="tel" required aria-required="true" placeholder="(555) 555-5555" autocomplete="tel">
+                            </div>
+                            <div class="input"><label for="email">Email</label><input id="email" name="email"
+                                    type="email" placeholder="you@example.com" autocomplete="email"></div>
+                            <div class="input"><label for="sex">Sex</label>
+                                <select id="sex" name="sex">
+                                    <option value="">Select…</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Intersex</option>
+                                    <option>Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3>Referring Provider</h3>
+                        <div class="grid g-3">
+                            <div class="input"><label class="required" for="refDoc">Doctor’s name</label><input
+                                    id="refDoc" name="refDoc" required aria-required="true" placeholder="Dr. Jane Smith" /></div>
+                            <div class="input"><label for="refPractice">Practice</label><input id="refPractice"
+                                    name="refPractice" placeholder="Practice name" /></div>
+                            <div class="input"><label for="refPhone">Office phone</label><input id="refPhone"
+                                    name="refPhone" type="tel" /></div>
+                        </div>
+                        <div class="grid g-2">
+                            <div class="input"><label for="refEmail">Office email</label><input id="refEmail"
+                                    name="refEmail" type="email" /></div>
+                            <div class="input"><label for="refNotes">Notes to specialist</label><textarea id="refNotes"
+                                    name="refNotes"
+                                    placeholder="Pertinent history, imaging notes, antibiotic use, etc."></textarea>
+                            </div>
+                        </div>
+                        <div class="error" id="err1" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 2 -->
+                    <fieldset data-step="2" aria-labelledby="s2h">
+                        <legend class="sr-only">Insurance</legend>
+                        <h2 id="s2h">Insurance</h2>
+                        <div class="row"><label><input type="checkbox" id="noIns" name="noIns"> No insurance / self-pay</label></div>
+                        <div id="insWrap" class="grid g-3">
+                            <div class="input"><label for="insCompany">Company</label><input id="insCompany"
+                                    name="insCompany" placeholder="e.g., Delta Dental"></div>
+                            <div class="input"><label for="groupNum">Group #</label><input id="groupNum"
+                                    name="groupNum"></div>
+                            <div class="input"><label for="memberId">Member ID</label><input id="memberId"
+                                    name="memberId"></div>
+                            <div class="input"><label for="planMax">Plan max</label><input id="planMax" name="planMax"
+                                    type="number" min="0" step="1" placeholder="e.g., 1500"></div>
+                            <div class="input"><label for="maxLeft">Max left</label><input id="maxLeft" name="maxLeft"
+                                    type="number" min="0" step="1"></div>
+                            <div class="input"><label for="deductible">Deductible</label><input id="deductible"
+                                    name="deductible" type="number" min="0" step="1"></div>
+                            <div class="input"><label for="dedLeft">Deductible left</label><input id="dedLeft"
+                                    name="dedLeft" type="number" min="0" step="1"></div>
+                            <div class="input"><label for="insPhone">Insurance phone</label><input id="insPhone"
+                                    name="insPhone" type="tel"></div>
+                            <div class="input"><label for="subscriber">Subscriber (if not patient)</label><input
+                                    id="subscriber" name="subscriber"></div>
+                        </div>
+                        <div class="error" id="err2" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 3: Referral Details -->
+                    <fieldset data-step="3" aria-labelledby="s3h">
+                        <legend class="sr-only">Referral Details</legend>
+                        <h2 id="s3h">Referral Details</h2>
+                        <div class="grid g-2">
+                            <div>
+                                <label class="required">Reason for visit</label>
+                                <div id="reasonChips" class="chips" role="group" aria-label="Reason for visit">
+                                    <button type="button" class="chip" data-val="Exam & Pulp Test" aria-pressed="false">Exam & Pulp Test</button>
+                                    <button type="button" class="chip" data-val="Root Canal Therapy" aria-pressed="false">Root Canal Therapy</button>
+                                    <button type="button" class="chip" data-val="Retreatment" aria-pressed="false">Retreatment</button>
+                                    <button type="button" class="chip" data-val="Periapical Surgery" aria-pressed="false">Periapical Surgery</button>
+                                    <button type="button" class="chip" data-val="Bleaching" aria-pressed="false">Bleaching</button>
+                                </div>
+                            </div>
+                            <div class="input"><label for="urgency">Urgency</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="">Select…</option>
+                                    <option>Routine (2–4 weeks)</option>
+                                    <option>Soon (1 week)</option>
+                                    <option>Urgent (48–72h)</option>
+                                    <option>Emergency (Pain/Swelling)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid g-3">
+                            <div class="input"><label for="symptoms">Chief complaint / symptoms</label><textarea id="symptoms"
+                                    name="symptoms" placeholder="Pain to biting, lingering cold, swelling, etc."></textarea></div>
+                            <div class="input"><label for="hx">Pertinent dental history</label><textarea id="hx" name="hx"
+                                    placeholder="Trauma, prior RCT, crowns, etc."></textarea></div>
+                            <div class="input"><label for="meds">Medications / allergies</label><textarea id="meds" name="meds"
+                                    placeholder="Optional"></textarea></div>
+                        </div>
+                        <div class="grid g-2">
+                            <div class="consent">
+                                <label><input type="checkbox" id="okXrays" name="okXrays"> I will send radiographs separately</label>
+                                <div class="hint">Use your secure email, imaging software, or the link below to send radiographs after submitting this referral.</div>
+                            </div>
+                            <div class="upload-box input">
+                                <label for="xrayDeliveryNote">X-ray delivery note</label>
+                                <textarea id="xrayDeliveryNote" name="xrayDeliveryNote"
+                                    placeholder="Example: X-rays sent by secure email, Dexis, or another imaging portal."></textarea>
+                                
+                                <div style="margin-top:10px">
+                                    <a class="btn secondary" href="mailto:office@mcmurtreyendo.com?subject=Referral%20X-rays">Email X-rays</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="error" id="err3" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 4 -->
+                    <fieldset data-step="4" aria-labelledby="s4h">
+                        <legend class="sr-only">Select Teeth for Evaluation or Treatment</legend>
+                        <h2 id="s4h">Select Teeth for Evaluation / Treatment</h2>
+                        <p class="hint" id="toothHelp">Maxillary (1–16) on top row, Mandibular (17–32) on bottom row. Use Tab to move between teeth. Press Space or Enter to toggle a tooth. Shift-click can select a range.</p>
+                        <div class="tooth-grid" id="toothGridTop" role="group" aria-label="Maxillary teeth 1 through 16" aria-describedby="toothHelp"></div>
+                        <div style="height:8px" aria-hidden="true"></div>
+                        <div class="tooth-grid" id="toothGridBottom" role="group" aria-label="Mandibular teeth 17 through 32" aria-describedby="toothHelp"></div>
+                        <div class="row" style="margin-top:10px">
+                            <button type="button" class="btn secondary" id="clearTeeth">Clear selection</button>
+                        </div>
+                        <div class="error" id="err4" role="alert"></div>
+                    </fieldset>
+
+                    <!-- STEP 5 -->
+                    <fieldset data-step="5" aria-labelledby="s5h">
+                        <legend class="sr-only">Review and Submit</legend>
+                        <h2 id="s5h">Review</h2>
+                        <div id="reviewPane" class="review" aria-live="polite" aria-atomic="true"></div>
+                        <p class="hint" style="margin-top:8px">Submitting will open a printable summary in a new browser tab
+                            (you can print or save as PDF).</p>
+                        <div class="error" id="err5" role="alert"></div>
+                    </fieldset>
+
+                    <div class="actions">
+                        <div class="row"><button type="button" class="btn secondary" id="prevBtn">Back</button></div>
+                        <div class="row">
+                            <button type="button" class="btn" id="nextBtn">Next</button>
+                            <button type="submit" class="btn" id="submitBtn" style="display:none">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </main>
+
+        <footer>© <span id="yr"></span> McMurtrey Endodontics - Tyler McMurtrey</footer>
+    </div>
+
+    <!-- Load JS externally so the HTML parser never sees inline script content -->
+    <script src="assets/js/referral-form.js" defer></script>
+    <script src="assets/js/referral-enhancements.js" defer></script>
+
+    <script>
+        (function () {
+            function enhanceStepper() {
+                document.querySelectorAll('.step').forEach(function (step) {
+                    if (step.classList.contains('active')) {
+                        step.setAttribute('aria-current', 'step');
+                    } else {
+                        step.removeAttribute('aria-current');
+                    }
+                });
+            }
+
+            function enhanceToothButtons() {
+                enhanceStepper();
+                document.querySelectorAll('.pick').forEach(function (button) {
+                    if (!button.hasAttribute('type')) button.setAttribute('type', 'button');
+                    if (!button.hasAttribute('aria-pressed')) button.setAttribute('aria-pressed', button.classList.contains('active') ? 'true' : 'false');
+                    const toothNumber = button.closest('.tooth')?.querySelector('.n')?.textContent?.trim();
+                    if (toothNumber && !button.hasAttribute('aria-label')) {
+                        button.setAttribute('aria-label', 'Select tooth ' + toothNumber);
+                    }
+                });
+            }
+            enhanceToothButtons();
+            const observer = new MutationObserver(enhanceToothButtons);
+            observer.observe(document.body, { childList: true, subtree: true });
+        })();
+    </script>
+
+    <script>
+        document.addEventListener('click', function (event) {
+            const chip = event.target.closest('.chip[aria-pressed]');
+            if (chip) {
+                window.setTimeout(function () {
+                    chip.setAttribute('aria-pressed', chip.classList.contains('active') ? 'true' : 'false');
+                }, 0);
+            }
+
+            const tooth = event.target.closest('.pick');
+            if (tooth) {
+                window.setTimeout(function () {
+                    tooth.setAttribute('aria-pressed', tooth.classList.contains('active') ? 'true' : 'false');
+                }, 0);
+            }
+        });
+    </script>
+</body>
+
+</html>

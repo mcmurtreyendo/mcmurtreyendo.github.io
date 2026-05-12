@@ -1,10 +1,10 @@
 {
   "currency": "USD",
   "cash": {
-    "evaluation": { "anterior": 122, "bicuspid": 122, "molar": 122 },
-    "rootCanal":  { "anterior": 1080, "bicuspid": 1250, "molar": 1425 },
-    "rootSurgery":{ "anterior": 1685, "bicuspid": 1875, "molar": 3001 },
-    "retx":       { "anterior": 1350,  "bicuspid": 1520,  "molar": 1820  },
+    "evaluation": { "anterior": 129, "bicuspid": 129, "molar": 129 },
+    "rootCanal":  { "anterior": 1149, "bicuspid": 1255, "molar": 1512 },
+    "rootSurgery":{ "anterior": 1350, "bicuspid": 1450, "molar": 1650 },
+    "retx":       { "anterior": 1433,  "bicuspid": 1606,  "molar": 1930  },
     "cbct":       { "anterior": 200,  "bicuspid": 200,  "molar": 200  }
   },
   "insurers": {
@@ -36,11 +36,11 @@
       "retx":       { "anterior": 1485.9,"bicuspid": 1551.6,"molar": 1983.6 },
       "cbct":       { "anterior": 200,   "bicuspid": 200,   "molar": 200 }
     },
-    "anthem": {
-      "evaluation": { "anterior": 92,  "bicuspid": 92,  "molar": 92  },
-      "rootCanal":  { "anterior": 747, "bicuspid": 808, "molar": 977 },
-      "rootSurgery":{ "anterior": 1115,"bicuspid": 1165,"molar": 1730 },
-      "retx":       { "anterior": 960, "bicuspid": 1010,"molar": 1162 },
+    "connection": {
+      "evaluation": { "anterior": 78,  "bicuspid": 78,  "molar": 78  },
+      "rootCanal":  { "anterior": 577, "bicuspid": 671, "molar": 891 },
+      "rootSurgery":{ "anterior": 977,"bicuspid": 1043,"molar": 1549 },
+      "retx":       { "anterior": 754, "bicuspid": 848,"molar": 1038 },
       "cbct":       { "anterior": 200, "bicuspid": 200, "molar": 200 }
     },
     "metlife": {

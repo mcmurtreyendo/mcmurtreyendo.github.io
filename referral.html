@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Patient Referral Form</title>
-    <link rel="stylesheet" href="referral-form.css">
     <style>
         :root {
             --bg: #0b1220;
@@ -491,6 +490,643 @@
             display: block;
         }
 
+        /* Professional referral form refresh */
+        :root {
+            --bg: #f5f8fb;
+            --panel: #ffffff;
+            --muted: #64748b;
+            --text: #172033;
+            --primary: #2f7d8f;
+            --primary-strong: #1f6170;
+            --accent: #6592e6;
+            --ok: #278a57;
+            --warn: #b7791f;
+            --danger: #b42318;
+            --chip: #f7fafc;
+            --radius: 8px;
+            --shadow: 0 18px 42px rgba(22, 45, 61, .10);
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            font-family: Manrope, Lexend, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background: linear-gradient(180deg, #fbfdff 0%, #edf5f8 100%);
+        }
+
+        .wrap {
+            max-width: 1160px;
+            margin: 0 auto;
+            min-height: 100vh;
+            padding: 4px 18px 8px;
+            display: grid;
+            grid-template-rows: auto minmax(0, 1fr) auto;
+        }
+
+        header {
+            align-items: center;
+            padding: 0 0 6px;
+            margin-bottom: 0;
+        }
+
+        .brand-mark {
+            display: inline-flex;
+            align-items: center;
+            width: min(185px, 38vw);
+            flex: 0 0 auto;
+        }
+
+        .brand-mark img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .brand-block {
+            display: grid;
+            gap: 3px;
+        }
+
+        .brand {
+            font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+            font-weight: 800;
+            color: #172033;
+        }
+
+        .sub {
+            color: #53657d;
+            font-size: .86rem;
+        }
+
+        .top-nav a {
+            color: #174d5d;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+
+        .top-nav a:hover,
+        .top-nav a:focus {
+            background: #e6f2f5;
+            color: #123c49;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid #d8e3ea;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            min-height: 0;
+            height: calc(100vh - 104px);
+            display: grid;
+            grid-template-rows: auto minmax(0, 1fr);
+        }
+
+        .card .inner {
+            min-height: 0;
+            padding: 14px 22px 0;
+            display: flex;
+        }
+
+        form {
+            min-height: 0;
+            width: 100%;
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+        }
+
+        .stepper {
+            gap: 0;
+            padding: 0;
+            background: #f7fafc;
+            border-bottom: 1px solid #d8e3ea;
+        }
+
+        .step {
+            border: 0;
+            border-right: 1px solid #d8e3ea;
+            border-radius: 0;
+            background: transparent;
+            min-height: 48px;
+            padding: 8px 14px;
+        }
+
+        .step:last-child {
+            border-right: 0;
+        }
+
+        .step .num {
+            width: 28px;
+            height: 28px;
+            border: 1px solid #b7c7d3;
+            background: #ffffff;
+            color: #53657d;
+            font-weight: 800;
+        }
+
+        .step .label {
+            color: #4c5f75;
+            font-weight: 700;
+        }
+
+        .step.active {
+            background: #e9f5f7;
+            border-color: #d8e3ea;
+        }
+
+        .step.active .num {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .step.done .num {
+            background: var(--ok);
+            color: #ffffff;
+        }
+
+        h2 {
+            margin: 0 0 9px;
+            color: #172033;
+            font-size: clamp(1.25rem, 1.7vw, 1.6rem);
+            line-height: 1.2;
+        }
+
+        h3 {
+            margin: 14px 0 8px;
+            color: #213149;
+            font-size: 1rem;
+        }
+
+        .grid {
+            margin-bottom: 9px;
+        }
+
+        .input label,
+        fieldset > label {
+            color: #334155;
+            font-weight: 700;
+        }
+
+        .required:after {
+            color: var(--danger);
+        }
+
+        input,
+        select,
+        textarea {
+            border-radius: 6px;
+            border: 1px solid #b7c7d3;
+            background: #ffffff;
+            color: #172033;
+            min-height: 34px;
+            padding: 7px 12px;
+            box-shadow: 0 1px 0 rgba(15, 23, 42, .03);
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            min-height: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .checkbox-option {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            width: auto;
+            text-align: left;
+        }
+
+        textarea {
+            min-height: 72px;
+            resize: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(47, 125, 143, .16);
+        }
+
+        .hint {
+            color: #5b6f87;
+            font-size: .82rem;
+        }
+
+        .chip {
+            border-radius: 8px;
+            border: 1px solid #b7c7d3;
+            background: #ffffff;
+            color: #172033;
+            font-weight: 700;
+            min-height: 34px;
+            padding: 7px 9px;
+        }
+
+        .chip.active {
+            background: #e8f3ff;
+            border-color: var(--accent);
+            color: #173b72;
+        }
+
+        .consent,
+        .upload-box {
+            border-radius: 8px;
+            border: 1px solid #c9d8e1;
+            background: #f8fbfd;
+            padding: 10px;
+        }
+
+        .consent {
+            display: grid;
+            justify-items: start;
+            align-content: start;
+            gap: 6px;
+            text-align: left;
+        }
+
+        .upload-box {
+            border-color: #add3dc;
+        }
+
+        .tooth-grid {
+            gap: 5px;
+        }
+
+        .tooth {
+            border-radius: 8px;
+            border-color: #c9d8e1;
+            background: #ffffff;
+            padding: 6px 5px;
+        }
+
+        .pick {
+            width: 24px;
+            height: 24px;
+            border-color: #9fb3c1;
+            background: #f6fafc;
+            color: #172033;
+        }
+
+        .pick.active {
+            border-color: var(--primary);
+            background: #dff1f5;
+            box-shadow: 0 0 0 2px rgba(47, 125, 143, .16) inset;
+        }
+
+        .pick.active::after {
+            content: "X";
+            font-weight: 800;
+            color: #174d5d;
+        }
+
+        .review {
+            border-radius: 8px;
+            border-color: #d8e3ea;
+            background: #fbfdff;
+            max-height: calc(100vh - 310px);
+            overflow: auto;
+        }
+
+        .kv {
+            grid-template-columns: minmax(160px, 230px) 1fr;
+            border-bottom-color: #d8e3ea;
+        }
+
+        .kv > div:first-child {
+            color: #52657b;
+            font-weight: 800;
+        }
+
+        .review-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+
+        .actions {
+            border-top: 1px solid #d8e3ea;
+            background: #f7fafc;
+            padding: 12px 14px;
+            margin-top: 12px;
+        }
+
+        .btn {
+            border-radius: 8px;
+            background: var(--primary);
+            color: #ffffff;
+            min-height: 38px;
+            padding: 9px 16px;
+            box-shadow: 0 8px 18px rgba(47, 125, 143, .18);
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: var(--primary-strong);
+        }
+
+        .btn.secondary {
+            background: #ffffff;
+            color: #174d5d;
+            border: 1px solid #a9c6cf;
+            box-shadow: none;
+        }
+
+        .btn.secondary:hover,
+        .btn.secondary:focus {
+            background: #e9f5f7;
+        }
+
+        #downloadReferralBtn {
+            display: none;
+        }
+
+        a.btn {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error {
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        footer {
+            color: #53657d;
+            margin: 6px 0 0;
+        }
+
+        fieldset {
+            height: 100%;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        fieldset[data-step="5"] {
+            overflow: visible;
+        }
+
+        fieldset[data-step="5"].active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset[data-step="5"] .review {
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: none;
+            overflow: auto;
+        }
+
+        .success-dialog {
+            display: none !important;
+        }
+
+        fieldset[data-step="3"] .grid {
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        fieldset[data-step="3"] textarea {
+            min-height: 54px;
+        }
+
+        fieldset[data-step="3"] .consent,
+        fieldset[data-step="3"] .upload-box {
+            padding: 8px 10px;
+        }
+
+        fieldset[data-step="3"] .hint {
+            font-size: .76rem;
+            line-height: 1.25;
+        }
+
+        fieldset[data-step="3"] .upload-box > div[style] {
+            margin-top: 6px !important;
+        }
+
+        .tooth-chart-selector {
+            display: grid;
+            gap: 8px;
+            min-height: 0;
+        }
+
+        .tooth-chart-wrap {
+            position: relative;
+            width: min(100%, 660px);
+            margin: 0 auto;
+            aspect-ratio: 1774 / 887;
+            border: 1px solid #d7e4eb;
+            border-radius: 8px;
+            background: #f5f8fb;
+            overflow: hidden;
+        }
+
+        .tooth-chart-wrap img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: invert(1);
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        .tooth-chart-overlay {
+            position: absolute;
+            inset: 0;
+        }
+
+        .chart-pick {
+            position: absolute;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background: transparent;
+            color: #0c5266;
+            font: 800 10px/1 Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        .chart-pick span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 24px;
+            height: 21px;
+            padding: 0 4px;
+            border: 1px solid #82aebb;
+            border-radius: 5px;
+            background: #ffffff;
+            display: grid;
+            place-items: center;
+            box-shadow: 0 1px 3px rgba(23, 77, 93, .12);
+            z-index: 2;
+        }
+
+        .chart-pick.upper span {
+            top: auto;
+            bottom: -27px;
+        }
+
+        .chart-pick.lower span {
+            top: -27px;
+        }
+
+        .chart-pick:hover,
+        .chart-pick:focus-visible,
+        .chart-pick.active {
+            border-color: var(--primary);
+            background: rgba(199, 231, 238, .24);
+            color: #0c5266;
+            box-shadow: 0 0 0 1px rgba(47, 125, 143, .16);
+        }
+
+        .chart-pick:hover span,
+        .chart-pick:focus-visible span {
+            background: #e9f5f7;
+            border-color: var(--primary);
+        }
+
+        .chart-pick.active span {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(47, 125, 143, .26);
+        }
+
+        .tooth-selection-strip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #52657b;
+            font-size: 13px;
+        }
+
+        .tooth-selection-strip strong {
+            color: #173244;
+        }
+
+        .legacy-tooth-grid {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+        }
+
+        fieldset[data-step="3"] .xray-grid {
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width: 920px) {
+            header {
+                align-items: flex-start;
+            }
+
+            .top-nav {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .stepper {
+                grid-template-columns: 1fr;
+            }
+
+            .step {
+                border-right: 0;
+                border-bottom: 1px solid #d8e3ea;
+                min-height: auto;
+            }
+
+            .step:last-child {
+                border-bottom: 0;
+            }
+
+            .card .inner {
+                padding: 22px 18px;
+            }
+
+            .tooth-grid {
+                grid-template-columns: repeat(8, minmax(0, 1fr));
+            }
+
+            .tooth-chart-wrap {
+                width: min(100%, 560px);
+            }
+
+            .kv {
+                grid-template-columns: 1fr;
+                gap: 4px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .wrap {
+                padding-inline: 12px;
+            }
+
+            header {
+                display: grid;
+                gap: 10px;
+            }
+
+            .brand-mark {
+                width: min(260px, 100%);
+            }
+
+            .actions {
+                display: grid;
+            }
+
+            .actions .row {
+                width: 100%;
+            }
+
+            .actions .btn,
+            .review-actions .btn {
+                width: 100%;
+            }
+
+            .tooth-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .chart-pick {
+                font-size: 9px;
+            }
+
+            .chart-pick span {
+                min-width: 20px;
+                height: 18px;
+                padding-inline: 3px;
+            }
+
+            .chart-pick.upper span {
+                bottom: -23px;
+            }
+
+            .chart-pick.lower span {
+                top: -23px;
+            }
+        }
+
     </style>
 </head>
 
@@ -498,8 +1134,10 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrap">
         <header>
-            <div class="logo" aria-hidden="true"></div>
-            <div>
+            <a class="brand-mark" href="index.html" aria-label="McMurtrey Endodontics home">
+                <img src="assets/images/download-419x139.webp" alt="McMurtrey Endodontics">
+            </a>
+            <div class="brand-block">
                 <h1 class="brand">Patient Referral</h1>
                 <div class="sub">McMurtrey Endodontics Referral Form</div>
             </div>
@@ -588,7 +1226,7 @@
                     <fieldset data-step="2" aria-labelledby="s2h">
                         <legend class="sr-only">Insurance</legend>
                         <h2 id="s2h">Insurance</h2>
-                        <div class="row"><label><input type="checkbox" id="noIns" name="noIns"> No insurance / self-pay</label></div>
+                        <div class="row"><label class="checkbox-option"><input type="checkbox" id="noIns" name="noIns"> <span>No insurance / self-pay</span></label></div>
                         <div id="insWrap" class="grid g-3">
                             <div class="input"><label for="insCompany">Company</label><input id="insCompany"
                                     name="insCompany" placeholder="e.g., Delta Dental"></div>
@@ -645,17 +1283,14 @@
                             <div class="input"><label for="meds">Medications / allergies</label><textarea id="meds" name="meds"
                                     placeholder="Optional"></textarea></div>
                         </div>
-                        <div class="grid g-2">
-                            <div class="consent">
-                                <label><input type="checkbox" id="okXrays" name="okXrays"> I will send radiographs separately</label>
-                                <div class="hint">Use your secure email, imaging software, or the link below to send radiographs after submitting this referral.</div>
-                            </div>
+                        <div class="grid g-2 xray-grid">
                             <div class="upload-box input">
+                                <input type="hidden" id="okXrays" name="okXrays" value="false">
                                 <label for="xrayDeliveryNote">X-ray delivery note</label>
                                 <textarea id="xrayDeliveryNote" name="xrayDeliveryNote"
                                     placeholder="Example: X-rays sent by secure email, Dexis, or another imaging portal."></textarea>
                                 
-                                <div style="margin-top:10px">
+                                <div class="hint" style="margin-top:10px">
                                     <a class="btn secondary" href="mailto:office@mcmurtreyendo.com?subject=Referral%20X-rays">Email X-rays</a>
                                 </div>
                             </div>
@@ -667,10 +1302,19 @@
                     <fieldset data-step="4" aria-labelledby="s4h">
                         <legend class="sr-only">Select Teeth for Evaluation or Treatment</legend>
                         <h2 id="s4h">Select Teeth for Evaluation / Treatment</h2>
-                        <p class="hint" id="toothHelp">Maxillary (1–16) on top row, Mandibular (17–32) on bottom row. Use Tab to move between teeth. Press Space or Enter to toggle a tooth. Shift-click can select a range.</p>
-                        <div class="tooth-grid" id="toothGridTop" role="group" aria-label="Maxillary teeth 1 through 16" aria-describedby="toothHelp"></div>
-                        <div style="height:8px" aria-hidden="true"></div>
-                        <div class="tooth-grid" id="toothGridBottom" role="group" aria-label="Mandibular teeth 17 through 32" aria-describedby="toothHelp"></div>
+                        <div class="tooth-chart-selector">
+                            <p class="hint" id="toothHelp">Select at least one tooth number.</p>
+                            <div class="tooth-chart-wrap">
+                                <img src="81c35db2-18ef-4953-ad59-a5f41ccd61e2.png" alt="Adult tooth chart">
+                                <div class="tooth-chart-overlay" id="toothChartOverlay" role="group"
+                                    aria-label="Select adult tooth numbers"></div>
+                            </div>
+                            <div class="tooth-selection-strip">Selected: <strong id="selectedTeethText">None</strong></div>
+                        </div>
+                        <div class="legacy-tooth-grid" aria-hidden="true">
+                            <div class="tooth-grid" id="toothGridTop" role="group" aria-label="Maxillary teeth 1 through 16" aria-describedby="toothHelp"></div>
+                            <div class="tooth-grid" id="toothGridBottom" role="group" aria-label="Mandibular teeth 17 through 32" aria-describedby="toothHelp"></div>
+                        </div>
                         <div class="row" style="margin-top:10px">
                             <button type="button" class="btn secondary" id="clearTeeth">Clear selection</button>
                         </div>
@@ -682,8 +1326,6 @@
                         <legend class="sr-only">Review and Submit</legend>
                         <h2 id="s5h">Review</h2>
                         <div id="reviewPane" class="review" aria-live="polite" aria-atomic="true"></div>
-                        <p class="hint" style="margin-top:8px">Submitting will open a printable summary in a new browser tab
-                            (you can print or save as PDF).</p>
                         <div class="error" id="err5" role="alert"></div>
                     </fieldset>
 
@@ -691,7 +1333,8 @@
                         <div class="row"><button type="button" class="btn secondary" id="prevBtn">Back</button></div>
                         <div class="row">
                             <button type="button" class="btn" id="nextBtn">Next</button>
-                            <button type="submit" class="btn" id="submitBtn" style="display:none">Submit</button>
+                            <button type="button" class="btn secondary" id="downloadReferralBtn">Print Copy</button>
+                            <button type="submit" class="btn" id="submitBtn" style="display:none">Send Referral</button>
                         </div>
                     </div>
                 </form>
